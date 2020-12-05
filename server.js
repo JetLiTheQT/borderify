@@ -2,7 +2,7 @@
  * Write your routing code in this file.  Make sure to add your name and
  * @oregonstate.edu email address below.
  *
- * Name:
+ * Name: 
  * Email:
  */
 
@@ -19,21 +19,9 @@ app.set('view engine', 'handlebars');
 
 app.use(express.static('public'));
 
-app.get('/posts/:n', function(req,res,next){
-  var postNum = req.params.n;
-  if(postData[postNum])
-      res.status(200).render('singlePost', postData[postNum]);
-  
-  else {
-    next();
-  }
-});
+
 app.get('/', function(req, res, next){
-  if(postData){
-    res.status(200).render('postPage', {posts: postData});
-  } else{
-    next();
-  }
+   res.status(200);
 });
 
 

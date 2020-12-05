@@ -1,11 +1,10 @@
 {
-  "name": "master-assignment-5",
+  "name": "borderify",
   "version": "1.0.0",
-  "description": "Handlebars templating",
+  "description": "Adds borders to Photos",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "handlebars views/partials/newPost.handlebars -f public/newPostTemplate.js",
     "prestart": "npm run build"
   },
   "repository": {
