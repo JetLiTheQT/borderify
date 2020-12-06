@@ -97,11 +97,10 @@ h2{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-bottom: 5px;
 }
 
-<<<<<<< HEAD
 
-=======
 .patternSelection{
 
 }
@@ -112,20 +111,19 @@ h2{
 .buttonGroup{
   margin: 0 auto;
   text-align: center;
-  height: 300px;
+  height: auto;
   width: 60%;
   padding-bottom: 50px;
 }
 
 .selection{ 
-  height: 50%;
-  width: 10%;
+  height: 100px;
+  width: 100px;
   margin: 10px;
 }
 
 .borderTransition{
-  display: inline-flex;
-  flex-wrap: wrap;
+  display: flexbox;
   padding-bottom: -25%;
   
   height: 100%;
@@ -139,4 +137,3 @@ h2{
   width: auto;
   margin-bottom: 50px;
 }
->>>>>>> 6d91651686ed5f43a841d0fbda0b2ba91cd89cad
