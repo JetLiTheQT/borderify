@@ -33,7 +33,11 @@ h1{
   position: relative;
   text-align: center;
   margin: 0 auto;
+  padding-right: 80px;
 
+}
+.gitHubLogo img{
+  max-width: 80px;
 }
 .site-title{
   display: inline-block;
