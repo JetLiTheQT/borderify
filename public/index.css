@@ -47,16 +47,7 @@ h1{
 }
 
 .site-title a:hover{
-  text-decoration: underline;
   color: #131515ff;
-}
-
-/* Section with underline */
-.headerUnderline{
-  border-bottom: 3px solid black;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  width: 400px;
 }
 
 /* Body with the image */
