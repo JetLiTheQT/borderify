@@ -90,6 +90,7 @@ h2{
 
 /* Section Border Selection */
 .borderSelection{
+  text-align: center;
   font-family: 'Brush Script MT', cursive;
   font-weight: lighter;
   margin-top: 50px;
@@ -98,4 +99,44 @@ h2{
   justify-content: space-evenly;
 }
 
+<<<<<<< HEAD
 
+=======
+.patternSelection{
+
+}
+.imageSelection{
+
+}
+
+.buttonGroup{
+  margin: 0 auto;
+  text-align: center;
+  height: 300px;
+  width: 60%;
+  padding-bottom: 50px;
+}
+
+.selection{ 
+  height: 50%;
+  width: 10%;
+  margin: 10px;
+}
+
+.borderTransition{
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-bottom: -25%;
+  
+  height: 100%;
+  width: 100%;
+  border-radius: 2px;
+  border: 2px solid black;
+}
+
+.footerdiv{
+  height: 300px;
+  width: auto;
+  margin-bottom: 50px;
+}
+>>>>>>> 6d91651686ed5f43a841d0fbda0b2ba91cd89cad
