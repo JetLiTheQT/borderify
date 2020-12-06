@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 header {
     display: flex;
     align-items: center;
@@ -7,4 +8,95 @@ header {
   }
 a{
     text-decoration: none;
+=======
+h1,h2,h3,h4,p{
+  margin: 0;
+}
+body{
+  /*background-color: #fffafbff;*/
+}
+
+header{
+  display: flex;
+  padding-top: 10px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+img{
+  display:block;
+  max-width: 100%;
+}
+h1{
+  font-size: 60px;
+  line-height:0.8;
+}
+
+
+
+/*Home*/
+
+.headerContainer{
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+
+}
+.site-title{
+  display: inline-block;
+  color: white;
+  padding-left: 8px;
+  font-family: 'times new roman', cursive;
+  font-weight: lighter;
+}
+
+.site-title a:hover{
+  text-decoration: underline;
+  color: #131515ff;
+}
+
+/* Section with underline */
+.headerUnderline{
+  border-bottom: 3px solid black;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 400px;
+}
+
+/* Body with the image */
+.borderImageContainer{
+  background-color: rgb(233, 216, 253);
+  margin: 0 auto;
+  height: 350px;
+  width: 150px;
+  border-radius: 25px;
+  padding-left: 400px;  
+  padding-top: 50px;
+
+  background-size: 100%;
+  background-position: center; background-image: url("https://media.giphy.com/media/3o7aCXpnE2y0YCCoJa/giphy.gif");
+
+}
+
+/* nested div inside borderImageContainer */
+.borderImage{
+  margin-right: 70px;
+  margin-left: -330px;
+  height: 300px;
+  width: 400px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+html { 
+  background: url(https://media.giphy.com/media/3ohhwEZqxzKbNUHzji/giphy.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+>>>>>>> Stashed changes
 }
