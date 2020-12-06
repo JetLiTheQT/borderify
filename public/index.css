@@ -2,7 +2,7 @@ h1,h2,h3,h4,p{
   margin: 0;
 }
 body{
-  background-color: #fffafbff;
+  /*background-color: #fffafbff;*/
 }
 
 header{
@@ -11,7 +11,7 @@ header{
 }
 
 a{
-    color: #2b2c28ff;
+    color: white;
     text-decoration: none;
 }
 img{
@@ -53,7 +53,7 @@ h1{
 
 /* Section with underline */
 .headerUnderline{
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid white;
   margin: 0 auto;
   margin-bottom: 40px;
   width: 400px;
@@ -95,3 +95,10 @@ h1{
   justify-content: space-evenly;
 }
 
+html { 
+  background: url(https://thumbs.dreamstime.com/b/gradient-blue-white-abstract-background-gradient-blue-white-empty-space-soft-color-abstract-background-107155552.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
