@@ -68,7 +68,6 @@ h2{
 
 /* Body with the image */
 .borderImageContainer{
-  background-color: rgb(233, 216, 253);
   margin: 0 auto;
   height: 350px;
   width: 150px;
@@ -79,6 +78,9 @@ h2{
   background-size: 100%;
   background-position: center;
 
+}
+#borderImageID{
+  background-color: rgb(233, 216, 253);
 }
 
 /* nested div inside borderImageContainer */
