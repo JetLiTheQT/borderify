@@ -1,10 +1,66 @@
-header {
-    display: flex;
-    align-items: center;
-    position: relative;
-    text-align: center;
-    padding-left: 50%;
-  }
+h1,h2,h3,h4,p{
+  margin: 0;
+}
+body{
+  background-color: #fffafbff;
+}
+
+header{
+  display: flex;
+  padding-top: 10px;
+}
+
 a{
+    color: #2b2c28ff;
     text-decoration: none;
+}
+img{
+  display:block;
+  max-width: 100%;
+}
+h1{
+  font-size: 60px;
+  line-height:0.8;
+}
+
+
+
+/*Home*/
+
+.headerContainer{
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+
+}
+.site-title{
+  display: inline-block;
+  padding-left: 8px;
+  font-family: 'Brush Script MT', cursive;
+  font-weight: lighter;
+
+}
+
+.site-title a:hover{
+  text-decoration: underline;
+  color: #131515ff;
+}
+
+/* Section with underline */
+.headerUnderline{
+  border-bottom: 3px solid black;
+  margin: 0 auto;
+  width: 400px;
+}
+
+/* Body with the image */
+.borderImageContainer{
+  background-color: rgb(233, 216, 253); padding: 100% 0%;
+  width: 100%;
+  height: auto;
+  background-size: 10%;
+  background-position: center; background-image: url("https://media.tenor.com/images/8f711b12e00bc1816694bf51909f8b8f/tenor.gif");
+
 }
