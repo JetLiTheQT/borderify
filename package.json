@@ -5,18 +5,19 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "handlebars views/partials/buttonTemplate.handlebars -f public/newButton.js",
     "prestart": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/osu-cs290-f19/master-assignment-5.git"
+    "url": "git+https://github.com/osu-cs290-f20/final-project-team-55"
   },
   "author": "",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/osu-cs290-f19/master-assignment-5/issues"
+    "url": "https://github.com/osu-cs290-f20/final-project-team-55/issues"
   },
-  "homepage": "https://github.com/osu-cs290-f19/master-assignment-5#readme",
+  "homepage": "https://github.com/osu-cs290-f20/final-project-team-55#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
