@@ -59,20 +59,21 @@ h1{
 .borderImageContainer{
   background-color: rgb(233, 216, 253);
   margin: 0 auto;
-  height: 500px;
-  width: 500px;
+  height: 350px;
+  width: 150px;
   border-radius: 25px;
   padding-left: 400px;  
   padding-top: 50px;
 
-  background-size: 30%;
+  background-size: 100%;
   background-position: center; background-image: url("https://media.giphy.com/media/ZFFb7hsvPrkm1EO3eK/giphy.gif");
 
 }
 
 /* nested div inside borderImageContainer */
 .borderImage{
-
+  margin-right: 70px;
+  margin-left: -330px;
   height: 300px;
   width: 400px;
   background-color: white;
