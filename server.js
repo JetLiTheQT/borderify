@@ -10,7 +10,7 @@ var path = require('path');
 var express = require('express');
 var app = express();
 var port = process.env.PORT || 3000;
-
+var btnData = require('./buttonData.json');
 
 
 var exphbs = require('express-handlebars');
@@ -21,7 +21,9 @@ app.use(express.static('public'));
 
 
 app.get('/', function(req, res, next){
-   res.status(200);
+   if(btnData)
+    res.status(200).render('btnSection', {buttonDiv: btnData});
+   else{ next();}
 });
 
 

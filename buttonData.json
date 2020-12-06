@@ -1,0 +1,34 @@
+[
+    {
+        "color": "black",
+        "id": "blackID"
+    },
+    {
+        "color": "blue",
+        "id": "blueID"
+    },
+    {
+        "color": "red",
+        "id": "redID"
+    },
+    {
+        "color": "pink",
+        "id": "pinkID"
+    },
+    {
+        "color": "grey",
+        "id": "greyID"
+    },
+    {
+        "color": "white",
+        "id": "whiteID"
+    },
+    {
+        "color": "coral",
+        "id": "coralID"
+    },
+    {
+        "color": "teal",
+        "id": "tealID"
+    }
+]
