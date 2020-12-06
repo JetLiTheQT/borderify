@@ -79,3 +79,14 @@ h1{
   background-color: white;
   border-radius: 25px;
 }
+
+/* Section Border Selection */
+.borderSelection{
+  text-decoration: underline;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 30px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
