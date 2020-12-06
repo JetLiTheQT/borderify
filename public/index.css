@@ -2,8 +2,11 @@
   font-family: Brush Script MT;
   src: url(brush-script-mt/brush\ script\ mt\ kursiv.ttf);
 }
+
 html { 
-  background: url(https://thumbs.dreamstime.com/b/gradient-blue-white-abstract-background-gradient-blue-white-empty-space-soft-color-abstract-background-107155552.jpg) no-repeat center center fixed; 
+  background: rgb(255,255,255); 
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(188,190,255,1) 45%, rgba(255,100,100,1) 100%);
+  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -136,4 +139,7 @@ h2{
   height: 300px;
   width: auto;
   margin-bottom: 50px;
+}
+
+.footerdiv{
 }
