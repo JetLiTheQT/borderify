@@ -11,7 +11,7 @@ header{
 }
 
 a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 img{
@@ -33,7 +33,11 @@ h1{
   position: relative;
   text-align: center;
   margin: 0 auto;
+  padding-right: 80px;
 
+}
+.gitHubLogo img{
+  max-width: 80px;
 }
 .site-title{
   display: inline-block;
@@ -49,7 +53,7 @@ h1{
 
 /* Section with underline */
 .headerUnderline{
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid black;
   margin: 0 auto;
   margin-bottom: 40px;
   width: 400px;
