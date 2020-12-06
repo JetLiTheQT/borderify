@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Brush Script MT;
+  src: url(brush-script-mt/brush\ script\ mt\ kursiv.ttf);
+}
 html { 
   background: url(https://thumbs.dreamstime.com/b/gradient-blue-white-abstract-background-gradient-blue-white-empty-space-soft-color-abstract-background-107155552.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
