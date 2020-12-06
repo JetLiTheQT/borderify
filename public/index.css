@@ -1,13 +1,19 @@
+html { 
+  background: url(https://thumbs.dreamstime.com/b/gradient-blue-white-abstract-background-gradient-blue-white-empty-space-soft-color-abstract-background-107155552.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 h1,h2,h3,h4,p{
   margin: 0;
-}
-body{
-  /*background-color: #fffafbff;*/
 }
 
 header{
   display: flex;
   padding-top: 10px;
+  padding-bottom: 50px;
 }
 
 a{
@@ -22,7 +28,10 @@ h1{
   font-size: 60px;
   line-height:0.8;
 }
-
+h2{
+  font-size: 30px;
+  line-height:0.8;
+}
 
 
 /*Home*/
@@ -47,7 +56,7 @@ h1{
 }
 
 .site-title a:hover{
-  color: #131515ff;
+  color: #251f1f;
 }
 
 /* Body with the image */
@@ -77,19 +86,11 @@ h1{
 
 /* Section Border Selection */
 .borderSelection{
-  text-decoration: underline;
   font-family: 'Brush Script MT', cursive;
-  font-size: 30px;
+  font-weight: lighter;
   margin-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-html { 
-  background: url(https://thumbs.dreamstime.com/b/gradient-blue-white-abstract-background-gradient-blue-white-empty-space-soft-color-abstract-background-107155552.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
