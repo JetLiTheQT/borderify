@@ -40,7 +40,6 @@ h1{
   padding-left: 8px;
   font-family: 'Brush Script MT', cursive;
   font-weight: lighter;
-
 }
 
 .site-title a:hover{
@@ -52,15 +51,35 @@ h1{
 .headerUnderline{
   border-bottom: 3px solid black;
   margin: 0 auto;
+  margin-bottom: 40px;
   width: 400px;
 }
 
 /* Body with the image */
 .borderImageContainer{
-  background-color: rgb(233, 216, 253); padding: 100% 0%;
-  width: 100%;
+  background-color: rgb(233, 216, 253);
+  /* padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px; */
+  padding: 5px 0px;
+  margin-top: 10px;
+  margin: 0 auto;
+  /*border: 5px solid black;*/
+  border-radius: 25px;
+  width: 40%;
   height: auto;
-  background-size: 10%;
-  background-position: center; background-image: url("https://media.tenor.com/images/8f711b12e00bc1816694bf51909f8b8f/tenor.gif");
+  background-size: 30%;
+  background-position: center; background-image: url("https://media.giphy.com/media/ZFFb7hsvPrkm1EO3eK/giphy.gif");
 
+}
+
+/* nested div inside borderImageContainer */
+.borderImage{
+  background-color: white;
+  padding: 300px 0%;
+  margin: 0 auto;
+  /*border: 5px solid black;*/
+  border-radius: 25px;
+  width: 50%;
 }
