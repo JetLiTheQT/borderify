@@ -40,6 +40,8 @@ function loadButtons(){
   }
 }
 
+
+
 /* Function for Input for image-only files.
    GOAL: Take that input, store it in index.js and create a new dom where borderImage should be. 
     - Make sure to set width to 100% to fill the borderImage container */

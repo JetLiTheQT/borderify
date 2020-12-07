@@ -4,6 +4,7 @@
   src: url(brush-script-mt/brush\ script\ mt\ kursiv.ttf);
 }
 
+
 /* Typography */
 html { 
   /* Yo this isn't responsive, try fixing it. No hostility in this comment */
@@ -214,11 +215,4 @@ h2{
 .tab-content:target {
   display: block;
 }
-/*
-#menu{
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-}*/
+
