@@ -1,6 +1,30 @@
-<div class="borderTransition" id= "buttonDiv">
-    {{#each buttonDiv}}
-        {{>buttonTemplate}}  
-    {{/each}}    
-</div>
+
+<section>
+    <div class="borderImageContainer" id = "borderImageID">
+        <div>
+            <div class = "borderImage">
+                <!-- Input for image-only files. -->
+                <!-- GOAL: Take that input, store it in index.js and create a new dom where borderImage should be. 
+                        - Make sure to set width to 100% to fill the borderImage container -->
+                <p id = "websiteIntro">Welcome to the website, Borderify! Click anywhere here to add a photo!</p>
+                <input type="file" id = "imgUsrFile" accept="image/png, image/jpeg"/>
+            </div>
+        </div>
+    </div>
+    <div class="borderSelection">
+        <a href class = "colorSelection"><h2>Colors</h2></a>
+        <!-- Goal is for the images Tab is to pull stock images from buttonData.json or a new *Data.json file to create buttons for the imageSelection 
+        to be then implemented similarly to how each color button works -->
+        <a href class = "imageSelection"><h2>Images</h2></a>
+    </div>
+    <div class = "buttonGroup">
+        <div class="borderTransition" id= "buttonDiv">
+            <!-- Loops through each button from buttonData and creates a new button from the template -->
+            {{#each buttonDiv}}
+                {{>buttonTemplate}}  
+            {{/each}}    
+        </div>
+    </div>
+</section>
+
 

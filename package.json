@@ -5,8 +5,11 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
     "build": "handlebars views/partials/buttonTemplate.handlebars -f public/newButton.js",
-    "prestart": "npm run build"
+    "prestart": "npm run build",
+    "predev": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -22,8 +25,8 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "handlebars": "^4.7.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   }
-
-  
-
 }

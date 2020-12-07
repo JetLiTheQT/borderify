@@ -1,16 +1,19 @@
+/* Font Setup */
 @font-face {
   font-family: Brush Script MT;
   src: url(brush-script-mt/brush\ script\ mt\ kursiv.ttf);
 }
 
+/* Typography */
 html { 
+  /* Yo this isn't responsive, try fixing it. No hostility in this comment */
   background: rgb(255,255,255); 
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(188,190,255,1) 45%, rgba(255,100,100,1) 100%);
-  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: cover;
 }
 
 h1,h2,h3,h4,p{
@@ -41,20 +44,24 @@ h2{
 }
 
 
-/*Home*/
+/* Home Page */
+    /* Github Logo */
+    .gitHubLogo img{
+      padding-left: 50px;
+      max-width: 80px;
+    }
 
+    /* Header CSS */
 .headerContainer{
   display: flex;
   align-items: center;
   position: relative;
   text-align: center;
   margin: 0 auto;
-  padding-right: 80px;
+  padding-right: 130px;
 
 }
-.gitHubLogo img{
-  max-width: 80px;
-}
+
 .site-title{
   display: inline-block;
   padding-left: 8px;
@@ -66,7 +73,12 @@ h2{
   color: #251f1f;
 }
 
+
+
+
 /* Body with the image */
+
+
 .borderImageContainer{
   margin: 0 auto;
   height: 350px;
@@ -79,11 +91,8 @@ h2{
   background-position: center;
 
 }
-#borderImageID{
-  background-color: rgb(233, 216, 253);
-}
 
-/* nested div inside borderImageContainer */
+    /* nested div inside borderImageContainer */
 .borderImage{
   margin-right: 70px;
   margin-left: -330px;
@@ -91,9 +100,36 @@ h2{
   width: 400px;
   background-color: white;
   border-radius: 25px;
+  text-align: center;
+  position: relative;
 }
 
-/* Section Border Selection */
+#borderImageID{
+  background-color: pink;
+}
+      /*paragraph inside div to say where to click to add photo file */
+#websiteIntro{
+  position:absolute;
+  margin: 0 auto;
+  padding: 50px 10px;
+  font-size: 40px;
+  font-family: 'Brush Script MT';
+  font-weight: lighter;
+  line-height: 1.3;
+}
+      /*the inputFile ID with CSS that mirrors the container's dimensions so anywhere clicked in the container will prompt for an image file */
+#imgUsrFile{
+  text-align: center;
+  margin-right: 70px;
+  margin-left: -200px;
+  height: 300px;
+  width: 400px;
+  color: whitesmoke;
+  opacity: 0;
+  position:absolute;
+}
+
+/* Div Border Selection CSS. Alignment and etc for either Color/Image choice for user */
 .borderSelection{
   text-align: center;
   font-family: 'Brush Script MT', cursive;
@@ -104,15 +140,15 @@ h2{
   justify-content: space-evenly;
   margin-bottom: 5px;
 }
-
-
-.patternSelection{
-
+    /* Changed font size & weight of both the color selection and the image selection h2 tags*/
+.borderSelection h2{
+  /* Add new stuff*/
+  font-size: 55px;
+  font-weight: lighter;
+  line-height: 1em;
 }
-.imageSelection{
 
-}
-
+/* Container for container that holds all the buttons with the border selections! */
 .buttonGroup{
   margin: 0 auto;
   text-align: center;
@@ -121,31 +157,38 @@ h2{
   padding-bottom: 50px;
 }
 
+/* Selection is the class assigned to each button */
 .selection{ 
-  height: 100px;
-  width: 100px;
-  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 150px;
+  width: 150px;
+  margin: 10px auto;
 }
-
+/* all the button's share the same container : borderTransition, the css here that styles each button * houses them */
 .borderTransition{
-  display: flexbox;
+  display: flex;
+  flex-wrap: wrap;
   padding-bottom: -25%;
-  
   height: 100%;
   width: 100%;
   border-radius: 2px;
   border: 2px solid black;
 }
 
+
+
+
+
+/* Footer Div */
 .footerdiv{
   height: 300px;
   width: auto;
   margin-bottom: 50px;
 }
 
-.footerdiv{
-}
-
+/* 404 Error CSS */
 .error-container {
   font-family: "Brush Script MT", serif;
   font-weight: 100;
@@ -161,3 +204,5 @@ h2{
   font-size: 90px;
   letter-spacing: 2px;
 }
+
+

@@ -20,15 +20,32 @@
         "id": "greyID"
     },
     {
-        "color": "white",
-        "id": "whiteID"
-    },
-    {
         "color": "coral",
         "id": "coralID"
     },
     {
         "color": "teal",
         "id": "tealID"
+    },
+    {
+        "color": "orange",
+        "id": "orangeID"
+    },
+    {
+        "color": "purple",
+        "id": "purpleID"
+    },
+    {
+        "color": "yellow",
+        "id": "yellowID"
+    },
+    {
+        "color": "snow",
+        "id": "snowID"
+    },
+    {
+        "color": "aliceblue",
+        "id": "aliceblueID"
     }
+    
 ]
