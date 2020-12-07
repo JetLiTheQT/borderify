@@ -6,7 +6,6 @@
 
 /* Typography */
 html { 
-  /* Yo this isn't responsive, try fixing it. No hostility in this comment */
   background: rgb(255,255,255); 
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(188,190,255,1) 45%, rgba(255,100,100,1) 100%);
   -webkit-background-size: 100%;
