@@ -12,17 +12,29 @@
         </div>
     </div>
     <div class="borderSelection">
-        <a href class = "colorSelection"><h2>Colors</h2></a>
-        <!-- Goal is for the images Tab is to pull stock images from buttonData.json or a new *Data.json file to create buttons for the imageSelection 
-        to be then implemented similarly to how each color button works -->
-        <a href class = "imageSelection"><h2>Images</h2></a>
+        <div id = "menu">
+            <!-- the slash in #/colorTab prevents page movement when clicking (sike) -->
+            <a href="#colorTab" onclick="return method()" class = "colorSelection"><h2>Colors</h2></a>
+            
+            <!-- Goal is for the images Tab is to pull stock images from buttonData.json or a new *Data.json file to create buttons for the imageSelection 
+            to be then implemented similarly to how each color button works -->
+        <a href="#imageTab" class = "imageSelection"><h2>Images</h2></a>
+        </div>
     </div>
     <div class = "buttonGroup">
-        <div class="borderTransition" id= "buttonDiv">
-            <!-- Loops through each button from buttonData and creates a new button from the template -->
-            {{#each buttonDiv}}
-                {{>buttonTemplate}}  
-            {{/each}}    
+
+
+
+        <div id="colorTab" class="tab-content">
+            <!--UPDDATE FOR IMAGES WHEN CREATED 
+            <div id="imageTab" class="tab-content">IMAGE tab contents here</div> -->
+
+            <div class="borderTransition" id= "buttonDiv">
+                <!-- Loops through each button from buttonData and creates a new button from the template -->
+                {{#each buttonDiv}}
+                    {{>buttonTemplate}}  
+                {{/each}}    
+            </div>
         </div>
     </div>
 </section>

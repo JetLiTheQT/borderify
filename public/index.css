@@ -130,7 +130,7 @@ h2{
 }
 
 /* Div Border Selection CSS. Alignment and etc for either Color/Image choice for user */
-.borderSelection{
+.borderSelection div{
   text-align: center;
   font-family: 'Brush Script MT', cursive;
   font-weight: lighter;
@@ -206,3 +206,19 @@ h2{
 }
 
 
+
+/* Tabs styling */
+.tab-content {
+  display: none;
+}
+.tab-content:target {
+  display: block;
+}
+/*
+#menu{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}*/
