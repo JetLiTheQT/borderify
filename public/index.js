@@ -81,3 +81,4 @@ function openTab(evt, tabCorI) {
   document.getElementById(tabCorI).style.display = "block";
   evt.currentTarget.className += " active";
 }
+

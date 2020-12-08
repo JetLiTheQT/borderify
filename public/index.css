@@ -67,6 +67,7 @@ h2{
   padding-left: 8px;
   font-family: 'Brush Script MT', cursive;
   font-weight: lighter;
+  animation: fadeEffect 3s; /* Fading effect takes 1 second */
 }
 
 .site-title a:hover{
@@ -177,6 +178,17 @@ h2{
   border: 2px solid black;
 }
 
+.borderTransitionImage {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: -25%;
+  height: 100%;
+  width: 100%;
+  border-radius: 2px;
+  border: 2px solid black;
+
+}
 
 /* tabs for color and image /*
 /* Style the tab */

@@ -13,16 +13,12 @@
     </div>
     <div class="borderSelection">
 
-        <!-- tab div starts here -->
+        <!--  Calls function openTab to open tab and hide other tab; return false to prevent page jump on anchor click-->
+        <a href="#" class = "tablinks" onclick="openTab(event, 'colorTab'); return false" ><h2>Colors</h2></a>
 
-            
-        <a href class = "tablinks" onclick="openTab(event, 'colorTab')"><h2>Colors</h2></a>
         <!-- Goal is for the images Tab is to pull stock images from buttonData.json or a new *Data.json file to create buttons for the imageSelection 
         to be then implemented similarly to how each color button works -->
-
-        
-        <a href class = "tablinks" onclick="openTab(event, 'imageTab')" id="defaultOpen" ><h2>Images</h2></a>
-        
+        <a href="#" class = "tablinks" onclick="openTab(event, 'imageTab'); return false" id="defaultOpen" ><h2>Images</h2></a>
     </div>
 
     <div class = "buttonGroup tabcontent" id="colorTab">
@@ -36,8 +32,10 @@
 
     <!-- contents of images tab -->
     <div class = "imageGroup tabcontent" id="imageTab">
-        <div class="borderTransition" id= "imageDiv">
-            <p>poop</p>
+        <div class="borderTransitionImage" id= "imageDiv">
+            {{#each buttonDiv}}
+                    {{>buttonTemplate}}  
+            {{/each}} 
         </div>
     </div>    
 
