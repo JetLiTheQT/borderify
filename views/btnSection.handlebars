@@ -12,29 +12,35 @@
         </div>
     </div>
     <div class="borderSelection">
-        <div id = "menu">
-            <!-- the slash in #/colorTab prevents page movement when clicking (sike) -->
-            <a href="#colorTab"  class = "colorSelection"><h2>Colors</h2></a>
+
+        <!-- tab div starts here -->
+
             
-            <!-- Goal is for the images Tab is to pull stock images from buttonData.json or a new *Data.json file to create buttons for the imageSelection 
-            to be then implemented similarly to how each color button works -->
-        <a href="#imageTab" class = "imageSelection"><h2>Images</h2></a>
-        </div>
+        <a href class = "tablinks" onclick="openTab(event, 'colorTab')"><h2>Colors</h2></a>
+        <!-- Goal is for the images Tab is to pull stock images from buttonData.json or a new *Data.json file to create buttons for the imageSelection 
+        to be then implemented similarly to how each color button works -->
+
+        
+        <a href class = "tablinks" onclick="openTab(event, 'imageTab')" id="defaultOpen" ><h2>Images</h2></a>
+        
     </div>
-    <div class = "buttonGroup">
 
-
-
-        <div id="colorTab" class="tab-content">
-            <!--UPDDATE FOR IMAGES WHEN CREATED 
-            <div id="imageTab" class="tab-content">IMAGE tab contents here</div> -->
-
-            <div class="borderTransition" id= "buttonDiv">
-                <!-- Loops through each button from buttonData and creates a new button from the template -->
-                {{#each buttonDiv}}
+    <div class = "buttonGroup tabcontent" id="colorTab">
+        <div class="borderTransition" id= "buttonDiv">
+            <!-- Loops through each button from buttonData and creates a new button from the template -->
+            {{#each buttonDiv}}
                     {{>buttonTemplate}}  
-                {{/each}}    
-            </div>
+            {{/each}} 
+        </div>
+    </div>   
+
+    <!-- contents of images tab -->
+    <div class = "imageGroup tabcontent" id="imageTab">
+        <div class="borderTransition" id= "imageDiv">
+            <p>poop</p>
+        </div>
+    </div>    
+
         </div>
     </div>
 </section>
