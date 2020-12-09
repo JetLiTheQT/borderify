@@ -68,11 +68,9 @@ h2 {
   justify-content: center;
   align-items: center;
   background-color: #333;
-  transition-property: background-color, background-image, padding;
 }
 .imageAndSelectionContainer .borderImageContainer div.borderImage {
   margin: 10px;
-  border: 2px solid black;
   border-radius: 25px;
   height: 300px;
   width: 450px;
@@ -97,15 +95,25 @@ h2 {
   height: 100%;
   opacity: 0;
 }
-.imageAndSelectionContainer .slidecontainer {
-  margin-left: auto;
-  margin-right: 55px;
+.imageAndSelectionContainer .customizeBorder {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
   margin-top: 50px;
-  width: 50%;
 }
-.imageAndSelectionContainer .slidecontainer .slider {
+.imageAndSelectionContainer .customizeBorder .addBorderBtnContainer #borderBtn {
+  height: 15px;
+  width: 15px;
+  border: 1px solid black;
+}
+.imageAndSelectionContainer .customizeBorder .slidecontainer {
+  margin-top: 2px;
+  width: 100%;
+}
+.imageAndSelectionContainer .customizeBorder .slidecontainer .slider {
   -webkit-appearance: none;
-  width: 10%;
+  width: 100%;
   height: 8px;
   background: grey;
   outline: none;
@@ -114,10 +122,10 @@ h2 {
   transition: opacity 0.2s;
   display: flex;
 }
-.imageAndSelectionContainer .slidecontainer .slider :hover {
+.imageAndSelectionContainer .customizeBorder .slidecontainer .slider :hover {
   opacity: 1;
 }
-.imageAndSelectionContainer .slidecontainer .slider :focus {
+.imageAndSelectionContainer .customizeBorder .slidecontainer .slider :focus {
   box-shadow: none;
   outline: none;
 }

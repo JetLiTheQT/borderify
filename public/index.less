@@ -77,7 +77,6 @@ h2{
         justify-content: center;
         align-items: center;
         background-color: #333;
-        transition-property: background-color, background-image, padding;
        
 
         #borderForPic{
@@ -85,7 +84,8 @@ h2{
         }
         div.borderImage{
             margin: 10px;
-            border: 2px solid black;
+            //Create button that does border.
+            //border: 2px solid black;
             border-radius: 25px;
             height: 300px;
             width: 450px;
@@ -113,30 +113,43 @@ h2{
         }
         
     }
-    .slidecontainer{
-        margin-left: auto;
-        margin-right: 55px;
+    .customizeBorder{
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
         margin-top: 50px;
-        width: 50%;
-        .slider{
-            -webkit-appearance: none;
-            width: 10%;
-            height: 8px;
-            background: grey;
-            outline: none;
-            opacity: .5;
-            -webkit-transition: .2s;
-            transition: opacity .2s;
-            display: flex;
-            :hover{
-                opacity: 1;
+        .addBorderBtnContainer{
+            #borderBtn{
+                height: 15px;
+                width: 15px;
+                border: 1px solid black;
             }
-            :focus {
-                box-shadow: none;
+        }
+        .slidecontainer{
+            margin-top: 2px;
+            width: 100%;
+            .slider{
+                -webkit-appearance: none;
+                width: 100%;
+                height: 8px;
+                background: grey;
                 outline: none;
-              }
+                opacity: .5;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+                display: flex;
+                :hover{
+                    opacity: 1;
+                }
+                :focus {
+                    box-shadow: none;
+                    outline: none;
+                  }
+            }
         }
     }
+    
     .borderSelection{
         margin-top: 120px;
         width: 1024px;

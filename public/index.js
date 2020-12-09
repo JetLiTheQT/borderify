@@ -31,10 +31,11 @@ function setColor(color)
 {
   document.getElementById(color+"ID").addEventListener("click", function(){
       document.getElementById("borderImageID").style.backgroundColor = color;
+      document.getElementById("borderImageID").style.transitionProperty = "background-color";
+      document.getElementById("borderImageID").style.transitionDuration = "1.5s";
       if(document.getElementById("borderImageID").style.backgroundImage !== "")
       {
         document.getElementById("borderImageID").style.backgroundImage = "";
-        document.getElementById("borderImageID").style.transitionDuration = "1.5s";
       }
   })
 }
@@ -66,12 +67,13 @@ function insertNewIMGButton(photoURL, id/*imageURL*/){
 function setIMG(photoURL)
 {
   document.getElementById(photoURL+"ID").addEventListener("click", function(){
-      document.getElementById("borderImageID").style.backgroundImage = "url("+photoURL+")";
-      if(document.getElementById("borderImageID").style.backgroundColor !== "")
-      {
-        document.getElementById("borderImageID").style.backgroundColor = "";
-        document.getElementById("borderImageID").style.transitionDuration = "1.5s";
-      }
+    document.getElementById("borderImageID").style.backgroundImage = "url("+photoURL+")";
+    document.getElementById("borderImageID").style.transitionProperty = "background-image";
+    document.getElementById("borderImageID").style.backgroundSize = "cover";
+    document.getElementById("borderImageID").style.backgroundPosition = "center";
+    document.getElementById("borderImageID").style.transitionDuration = "1.5s";
+    if(document.getElementById("borderImageID").style.backgroundColor !== "")
+      document.getElementById("borderImageID").style.backgroundColor = "";   
   })
 }
 //Loads buttons at start 
@@ -90,13 +92,22 @@ function loadIMGButtons(){
 
 var sliderChange = document.getElementById("myRange");
 
-sliderChange.addEventListener("change", function(){
+sliderChange.addEventListener("input", function(){
   var sliderNum = document.getElementById("myRange").value;
   var divToChange = document.getElementById("borderImageID");
   divToChange.style.padding = "" +sliderNum+ "px";
+  divToChange.style.transitionProperty = "padding";
   divToChange.style.transitionDuration = ".5s";
 })
 
+var addBorderBtn = document.getElementById("borderBtn");
+addBorderBtn.addEventListener("click", function(){ 
+  if(document.getElementById("borderImageUsrPic").style.border !== "")
+    document.getElementById("borderImageUsrPic").style.border = "";
+  else{
+    document.getElementById("borderImageUsrPic").style.border = "2px solid black";
+  }
+})
 
 
 /* Function for Input for image-only files.
