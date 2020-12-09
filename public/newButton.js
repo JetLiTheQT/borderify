@@ -12,6 +12,6 @@ templates['buttonTemplate'] = template({"compiler":[8,">= 4.3.0"],"main":functio
     + alias4(((helper = (helper = lookupProperty(helpers,"id") || (depth0 != null ? lookupProperty(depth0,"id") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data,"loc":{"start":{"line":1,"column":34},"end":{"line":1,"column":40}}}) : helper)))
     + "\" data-color = \""
     + alias4(((helper = (helper = lookupProperty(helpers,"color") || (depth0 != null ? lookupProperty(depth0,"color") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"color","hash":{},"data":data,"loc":{"start":{"line":1,"column":56},"end":{"line":1,"column":65}}}) : helper)))
-    + "\"></button>\r\n";
+    + "\"></button>\n";
 },"useData":true});
 })();

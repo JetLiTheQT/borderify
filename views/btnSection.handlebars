@@ -28,14 +28,12 @@
             
             <!-- Goal is for the images Tab is to pull stock images from buttonData.json or a new *Data.json file to create buttons for the imageSelection 
             to be then implemented similarly to how each color button works -->
+            <!-- On button click, will add active class to underline curr tab, and run openTab func -->
             <a href="#" class = "tablinks" onclick="openTab(event, 'imageTab'); return false" id="defaultOpen" ><h2>Images</h2></a>
         </div>
         
         <div class = "buttonGroup">
         <div id="colorTab" class="tabcontent">
-                <!--UPDDATE FOR IMAGES WHEN CREATED 
-                <div id="imageTab" class="tab-content">IMAGE tab contents here</div> -->
-
             <div class="borderTransition" id= "buttonDiv">
                 <!-- Loops through each button from buttonData and creates a new button from the template -->
                 {{#each buttonDiv}}
@@ -43,7 +41,7 @@
                 {{/each}}    
             </div>
             <div class ="colorPickerButton" id="colorPickerButtonID">
-                    <label for="colorpicker" id="colorpickerLabel"><span id ="clrpickerspan">Pick your own color!: </span></label>
+                    <label for="colorpicker" id="colorpickerLabel"><span id ="clrpickerspan">Pick your own color:</span></label>
                     <input type="color" id="colorpicker" value="#FFFFFF">
             </div>
         </div>
