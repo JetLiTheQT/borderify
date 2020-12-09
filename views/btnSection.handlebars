@@ -19,6 +19,8 @@
             <input type="range" min="1" max="100" value="1" class="slider" id="myRange">
         </div>
     </div>
+
+    
    
     
     <div class="borderSelection">
@@ -28,7 +30,7 @@
             
             <!-- Goal is for the images Tab is to pull stock images from buttonData.json or a new *Data.json file to create buttons for the imageSelection 
             to be then implemented similarly to how each color button works -->
-            <a href="#" class = "tablinks" onclick="openTab(event, 'imageTab'); return false" id="defaultOpen" ><h2>Images</h2></a>
+            <a href="#" class = "tablinks" onclick="makeAndTake()" id="defaultOpen" ><h2>Download</h2></a>
         </div>
         
         <div class = "buttonGroup">
@@ -48,14 +50,7 @@
             </div>
         </div>
 
-        <div class="tabcontent" id="imageTab">
-            <div class="borderTransition" id = "imgButtonDiv">
-                {{#each imgButtonDiv}}
-                    {{>imgbuttonTemplate}}
-                {{/each}}
-            </div>
-        </div>
-        </div>
+      
         
     </div>
       

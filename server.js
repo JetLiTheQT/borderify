@@ -12,6 +12,7 @@ var app = express();
 var port = process.env.PORT || 3000;
 var btnData = require('./buttonData.json');
 var imgbtnData = require('./imgButtonData.json');
+var domtoimage = require('dom-to-image');
 
 var exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));

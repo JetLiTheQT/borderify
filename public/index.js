@@ -1,3 +1,4 @@
+
 //Test code to change the background color of the border.
 
 /*
@@ -145,7 +146,39 @@ window.onload = function() {
     fileDisplayAreaz.style.maxHeight = "50%";
      });
   
-}    
+}
+var download = function (filename) {
+  var element = document.createElement('a');
+  element.setAttribute('href', filename);
+  element.setAttribute('download', filename);
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+function makeAndTake(){
+  html2canvas(document.getElementById("borderImageID")).then(function(canvas) {
+    var thingy = canvas;
+    var downImg = thingy.toDataURL("image/jpg");
+    var element = document.createElement('a');
+    element.setAttribute('href', downImg);
+    element.setAttribute('download', downImg);
+  
+    element.style.display = 'none';
+    document.body.appendChild(element);
+  
+    element.click();
+  
+    document.body.removeChild(element);
+ 
+});
+
+
+
+}
 
 function colorPickerFunc(){
   var colorpicker = document.getElementById('colorpicker');
@@ -166,9 +199,12 @@ function colorPickerFunc(){
 //When the website is loaded, it will automatically load all the buttons. 
 //GOAL 
 //Make the website automatically load a random image/color when initially loaded so the background-color of the borderImageContainer & borderImage aren't the same
+
 window.addEventListener("load", loadButtons);
 window.addEventListener("load", colorPickerFunc);
 window.addEventListener("load", loadIMGButtons);
+
+
 //Get Color Picker
 
 
@@ -194,4 +230,7 @@ function openTab(evt, tabCorI) {
   document.getElementById(tabCorI).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+//tester for the canvas
+
 

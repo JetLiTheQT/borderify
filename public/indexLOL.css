@@ -129,6 +129,18 @@ h2 {
   box-shadow: none;
   outline: none;
 }
+.imageAndSelectionContainer #downn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.imageAndSelectionContainer #downn a {
+  text-shadow: 2px 2px grey;
+  font-family: 'Pacifico', cursive;
+  font-size: 55px;
+  font-weight: lighter;
+  line-height: 1em;
+  padding-bottom: 0.5em;
+}
 .imageAndSelectionContainer .borderSelection {
   margin-top: 120px;
   width: 1024px;
@@ -273,4 +285,15 @@ h2 {
   height: auto;
   width: auto;
   margin-bottom: 50px;
+}
+.button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
