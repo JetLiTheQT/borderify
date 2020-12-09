@@ -9,8 +9,10 @@
 }
 /* Typography */
 html { 
+  /* Yo this isn't responsive, try fixing it. No hostility in this comment */
   background: rgb(255,255,255); 
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(188,190,255,1) 45%, rgba(255,100,100,1) 100%);
+<<<<<<< HEAD
   /* -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%; 
@@ -19,6 +21,13 @@ html {
   height: 100%;
   width: 100%;
   
+=======
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: cover;
+>>>>>>> 5f4dd79fb61473ecc9d739cbc399d06c8f701b67
 }
 
 h1,h2,h3,h4,p{
@@ -73,6 +82,7 @@ h2{
   padding-left: 8px;
   font-family: 'Pacifico', cursive;
   font-weight: lighter;
+  animation: fadeEffect 3s; /* Fading effect takes 1 second */
 }
 
 .site-title a:hover{
@@ -199,6 +209,61 @@ h2{
   height: 100%;
   width: 100%;
 }
+
+.borderTransitionImage {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: -25%;
+  height: 100%;
+  width: 100%;
+  border-radius: 2px;
+  border: 2px solid black;
+
+}
+
+/* tabs for color and image /*
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+
+
+
+
+
 
 
 

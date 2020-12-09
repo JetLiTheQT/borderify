@@ -11,13 +11,14 @@
         </div>
     </div>
     <div class="borderSelection">
+=
         <div id = "menu">
-            <!-- the slash in #/colorTab prevents page movement when clicking (sike) -->
-            <a href="#colorTab" onclick="return method()" class = "colorSelection"><h2>Colors</h2></a>
+            <!--  Calls function openTab to open tab and hide other tab; return false to prevent page jump on anchor click-->
+            <a href="#" class = "tablinks" onclick="openTab(event, 'colorTab'); return false" ><h2>Colors</h2></a>
             
             <!-- Goal is for the images Tab is to pull stock images from buttonData.json or a new *Data.json file to create buttons for the imageSelection 
             to be then implemented similarly to how each color button works -->
-            <a href="#imageTab" class = "imageSelection"><h2>Images</h2></a>
+            <a href="#" class = "tablinks" onclick="openTab(event, 'imageTab'); return false" id="defaultOpen" ><h2>Images</h2></a>
         </div>
         <div class = "buttonGroup">
             <div id="colorTab" class="tab-content">
@@ -28,10 +29,7 @@
                     {{#each buttonDiv}}
                         {{>buttonTemplate}}  
                     {{/each}}    
-                    {{!-- <div class ="colorPickerButton" id="colorPickerButtonID">
-                        <label for="colorpicker" id="colorpickerLabel"><span id ="clrpickerspan">Pick your own color!: </span></label>
-                        <input type="color" id="colorpicker" value="#FFFFFF">
-                    </div> --}}
+
              
                 </div>
                 <div class ="colorPickerButton" id="colorPickerButtonID">
