@@ -190,7 +190,6 @@ h2 {
   overflow-y: hidden;
 }
 .imageAndSelectionContainer .borderSelection .buttonGroup .tabcontent .borderTransition .selection {
-  margin: 5px;
   min-width: 150px;
   height: 150px;
   padding: calc(var(20) / 2 * 1.5);
@@ -198,12 +197,20 @@ h2 {
 }
 .imageAndSelectionContainer .borderSelection .buttonGroup .tabcontent .colorPickerButton {
   margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   display: flex;
   display: grid;
 }
 .imageAndSelectionContainer .borderSelection .buttonGroup .tabcontent .colorPickerButton #colorpickerLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 150px;
   height: 150px;
   grid-column: 1;
@@ -214,12 +221,15 @@ h2 {
   height: 150px;
   color: black;
   line-height: 0.8em;
-  font-family: sans-serif;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: large;
   text-align: center;
-  padding-top: -50px;
+  margin-bottom: 50px;
 }
 .imageAndSelectionContainer .borderSelection .buttonGroup .tabcontent .colorPickerButton #colorpicker {
   grid-column: 1;
+  text-align: center;
   grid-row: 1;
   height: 150px;
   width: 150px;
@@ -243,6 +253,8 @@ h2 {
   margin: 5px;
   border-radius: 8px;
 }
+
+
 /* tabs for color and image /*
 /* Style the tab */
 .tab {
@@ -251,7 +263,7 @@ h2 {
   background-color: #f1f1f1;
   /* Style the buttons that are used to open the tab content */
 }
-.tab .tab button {
+.tab button {
   background-color: inherit;
   float: left;
   border: none;
@@ -260,12 +272,24 @@ h2 {
   padding: 14px 16px;
   transition: 0.3s;
 }
-.tab .tab button :hover {
-  background-color: #ddd;
+ .tablinks :hover {
+  /* This could be made to make a background color or gradient on hover, 
+     but it doesn't look too pretty 8/
+  /*background: rgb(144,205,238);
+  background: radial-gradient(circle, rgba(144,205,238,1) 0%, rgba(255,255,255,1) 87%); */
+  border-radius: 25px;
+  text-decoration: underline;
+
 }
-.tab .tab button :active {
-  background-color: #ccc;
+ .active {
+  border-radius: 25px;
+  text-decoration: underline;
+  text-decoration-skip: box-decoration;
+  text-underline-offset: 5px;
+
 }
+
+
 /* 404 Error CSS */
 .error-container {
   font-family: "Pacifico", serif;
