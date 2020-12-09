@@ -77,7 +77,6 @@ function loadIMGButtons(){
   var test= document.getElementsByClassName("imgselection");
   for (i = 0; i < test.length; i++) {
       var x = document.getElementsByClassName("imgselection")[i].getAttribute("data-photoURL"); 
-      console.log(x);
       document.getElementById(x + "ID").style.backgroundImage = "url("+x+")";
       setIMG(x);
   }
@@ -85,7 +84,15 @@ function loadIMGButtons(){
 }
 
 
+/* Setup Slider */
 
+var sliderChange = document.getElementById("myRange");
+
+sliderChange.addEventListener("change", function(){
+  var sliderNum = document.getElementById("myRange").value;
+  var divToChange = document.getElementById("borderImageID");
+  divToChange.style.padding = "" +sliderNum+ "px";
+})
 
 
 
@@ -118,6 +125,10 @@ window.onload = function() {
     }
 
     reader.readAsDataURL(file);	
+    var fileDisplayAreaz = document.getElementById('borderForPic');
+    fileDisplayAreaz.style.padding = "25px";
+    fileDisplayAreaz.style.maxWidth = "800px";
+    fileDisplayAreaz.style.maxHeight = "50%";
      });
   
 }    

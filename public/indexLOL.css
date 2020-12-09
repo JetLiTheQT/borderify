@@ -68,6 +68,9 @@ h2 {
   justify-content: center;
   align-items: center;
   background-color: #333;
+  transition-property: background-color, background-image;
+  transition-duration: 1.7s;
+  transition: padding 0.5s ease-out, opacity 0.3s ease 0.5s;
 }
 .imageAndSelectionContainer .borderImageContainer div.borderImage {
   margin: 10px;
@@ -96,9 +99,34 @@ h2 {
   height: 100%;
   opacity: 0;
 }
+.imageAndSelectionContainer .slidecontainer {
+  margin-left: auto;
+  margin-right: 55px;
+  margin-top: 50px;
+  width: 50%;
+}
+.imageAndSelectionContainer .slidecontainer .slider {
+  -webkit-appearance: none;
+  width: 10%;
+  height: 8px;
+  background: grey;
+  outline: none;
+  opacity: 0.5;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  display: flex;
+}
+.imageAndSelectionContainer .slidecontainer .slider :hover {
+  opacity: 1;
+}
+.imageAndSelectionContainer .slidecontainer .slider :focus {
+  box-shadow: none;
+  outline: none;
+}
 .imageAndSelectionContainer .borderSelection {
   margin-top: 120px;
   width: 1024px;
+  height: auto;
   box-shadow: 5px 10px 18px #888888;
   border-radius: 25px;
 }
@@ -111,6 +139,7 @@ h2 {
   margin-bottom: -33px;
 }
 .imageAndSelectionContainer .borderSelection #menu a h2 {
+  text-shadow: 2px 2px grey;
   font-family: 'Pacifico', cursive;
   font-size: 55px;
   font-weight: lighter;
@@ -118,28 +147,36 @@ h2 {
   padding-bottom: 0.5em;
 }
 .imageAndSelectionContainer .borderSelection .buttonGroup {
+  display: flex;
+  flex-direction: row;
   height: 100%;
   width: 100%;
+  padding-top: 15px;
 }
 .imageAndSelectionContainer .borderSelection .buttonGroup .tabcontent:target {
   display: block;
 }
 .imageAndSelectionContainer .borderSelection .buttonGroup .tabcontent {
   display: none;
-  padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
   width: 100%;
   height: 100%;
 }
 .imageAndSelectionContainer .borderSelection .buttonGroup .tabcontent .borderTransition {
+  margin: 0 auto;
+  width: 98%;
   max-height: 100%;
   display: flex;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 .imageAndSelectionContainer .borderSelection .buttonGroup .tabcontent .borderTransition .selection {
+  margin: 5px;
   min-width: 150px;
   height: 150px;
+  padding: calc(var(20) / 2 * 1.5);
+  border-radius: 8px;
 }
 .imageAndSelectionContainer .borderSelection .buttonGroup .tabcontent .colorPickerButton {
   margin: 0 auto;
@@ -173,14 +210,20 @@ h2 {
   z-index: -1;
 }
 .imageAndSelectionContainer .borderSelection .buttonGroup #imageTab .borderTransition {
+  margin: 0 auto;
+  width: 98%;
   max-height: 100%;
   display: flex;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 .imageAndSelectionContainer .borderSelection .buttonGroup #imageTab .borderTransition .imgselection {
-  min-width: 150px;
-  height: 150px;
+  min-width: 350px;
+  height: 350px;
   background-position: center;
+  background-size: cover;
+  margin: 5px;
+  border-radius: 8px;
 }
 /* tabs for color and image /*
 /* Style the tab */
