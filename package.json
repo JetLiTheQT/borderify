@@ -8,7 +8,7 @@
     "start": "node server.js",
     "dev": "nodemon server.js",
     "build": "(handlebars views/partials/buttonTemplate.handlebars -f public/newButton.js) & (handlebars views/partials/imgbuttonTemplate.handlebars -f public/newImgButton.js)",
-    "buildcss": "less public/index.less public/indexLOL.css",
+    "buildcss": "lessc public/index.less public/indexLOL.css",
     "prestart": "(npm run build) & (npm run buildcss)",
     "predev": "(npm run build) & (npm run buildcss)"
   },
