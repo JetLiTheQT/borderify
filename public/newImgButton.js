@@ -12,6 +12,6 @@ templates['imgbuttonTemplate'] = template({"compiler":[8,">= 4.3.0"],"main":func
     + alias4(((helper = (helper = lookupProperty(helpers,"id") || (depth0 != null ? lookupProperty(depth0,"id") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data,"loc":{"start":{"line":1,"column":37},"end":{"line":1,"column":43}}}) : helper)))
     + "\" data-photoURL = \""
     + alias4(((helper = (helper = lookupProperty(helpers,"photoURL") || (depth0 != null ? lookupProperty(depth0,"photoURL") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"photoURL","hash":{},"data":data,"loc":{"start":{"line":1,"column":62},"end":{"line":1,"column":74}}}) : helper)))
-    + "\"></button>\n";
+    + "\"></button>\r\n";
 },"useData":true});
 })();
