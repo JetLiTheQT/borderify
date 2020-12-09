@@ -34,6 +34,7 @@ function setColor(color)
       if(document.getElementById("borderImageID").style.backgroundImage !== "")
       {
         document.getElementById("borderImageID").style.backgroundImage = "";
+        document.getElementById("borderImageID").style.transitionDuration = "1.5s";
       }
   })
 }
@@ -69,6 +70,7 @@ function setIMG(photoURL)
       if(document.getElementById("borderImageID").style.backgroundColor !== "")
       {
         document.getElementById("borderImageID").style.backgroundColor = "";
+        document.getElementById("borderImageID").style.transitionDuration = "1.5s";
       }
   })
 }
@@ -92,6 +94,7 @@ sliderChange.addEventListener("change", function(){
   var sliderNum = document.getElementById("myRange").value;
   var divToChange = document.getElementById("borderImageID");
   divToChange.style.padding = "" +sliderNum+ "px";
+  divToChange.style.transitionDuration = ".5s";
 })
 
 
