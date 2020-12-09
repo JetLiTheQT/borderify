@@ -31,20 +31,22 @@ function setColor(color)
 {
   document.getElementById(color+"ID").addEventListener("click", function(){
       document.getElementById("borderImageID").style.backgroundColor = color;
+      if(document.getElementById("borderImageID").style.backgroundImage !== "")
+      {
+        document.getElementById("borderImageID").style.backgroundImage = "";
+      }
   })
 }
 //Loads buttons at start 
 function loadButtons(){
   var test= document.getElementsByClassName("selection");
-
   for (i = 0; i < test.length; i++) {
-      var x = document.getElementsByTagName("button")[i].getAttribute("data-color"); 
+      var x = document.getElementsByClassName("selection")[i].getAttribute("data-color");
       document.getElementById(x + "ID").style.backgroundColor = x;
       setColor(x);
   }
 
 }
-
 
 
 //Function to insert a new img Button.
@@ -64,14 +66,17 @@ function setIMG(photoURL)
 {
   document.getElementById(photoURL+"ID").addEventListener("click", function(){
       document.getElementById("borderImageID").style.backgroundImage = "url("+photoURL+")";
+      if(document.getElementById("borderImageID").style.backgroundColor !== "")
+      {
+        document.getElementById("borderImageID").style.backgroundColor = "";
+      }
   })
 }
 //Loads buttons at start 
 function loadIMGButtons(){
   var test= document.getElementsByClassName("imgselection");
-  console.log(test.length);
   for (i = 0; i < test.length; i++) {
-      var x = document.getElementsByTagName("button")[i].getAttribute("data-photoURL"); 
+      var x = document.getElementsByClassName("imgselection")[i].getAttribute("data-photoURL"); 
       console.log(x);
       document.getElementById(x + "ID").style.backgroundImage = "url("+x+")";
       setIMG(x);

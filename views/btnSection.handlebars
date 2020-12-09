@@ -19,8 +19,9 @@
             to be then implemented similarly to how each color button works -->
             <a href="#" class = "tablinks" onclick="openTab(event, 'imageTab'); return false" id="defaultOpen" ><h2>Images</h2></a>
         </div>
+        
         <div class = "buttonGroup">
-            <div id="colorTab" class="tabcontent">
+        <div id="colorTab" class="tabcontent">
                 <!--UPDDATE FOR IMAGES WHEN CREATED 
                 <div id="imageTab" class="tab-content">IMAGE tab contents here</div> -->
 
@@ -35,6 +36,7 @@
                         <input type="color" id="colorpicker" value="#FFFFFF">
                 </div>
             </div>
+
             <div class="tabcontent" id="imageTab">
                 <div class="borderTransition" id = "imgButtonDiv">
                     {{#each imgButtonDiv}}
@@ -42,7 +44,8 @@
                     {{/each}}
                 </div>
             </div>
-           
+            
+            
 
         </div>
         
