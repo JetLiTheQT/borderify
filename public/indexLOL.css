@@ -129,18 +129,6 @@ h2 {
   box-shadow: none;
   outline: none;
 }
-.imageAndSelectionContainer #downn {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.imageAndSelectionContainer #downn a {
-  text-shadow: 2px 2px grey;
-  font-family: 'Pacifico', cursive;
-  font-size: 55px;
-  font-weight: lighter;
-  line-height: 1em;
-  padding-bottom: 0.5em;
-}
 .imageAndSelectionContainer .borderSelection {
   margin-top: 120px;
   width: 1024px;
@@ -227,6 +215,23 @@ h2 {
   background-color: #FFFFFF;
   z-index: -1;
 }
+/* .imageAndSelectionContainer .borderSelection .buttonGroup #imageTab .borderTransition {
+  margin: 0 auto;
+  width: 98%;
+  max-height: 100%;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.imageAndSelectionContainer .borderSelection .buttonGroup #imageTab .borderTransition .imgselection {
+  min-width: 350px;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  margin: 5px;
+  border-radius: 8px;
+} */
+
 /* tabs for color and image /*
 /* Style the tab */
 .tab {
@@ -269,15 +274,4 @@ h2 {
   height: auto;
   width: auto;
   margin-bottom: 50px;
-}
-.button {
-  background-color: #4CAF50;
-  /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
 }
