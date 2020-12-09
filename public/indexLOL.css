@@ -1,0 +1,166 @@
+/* Font Setup */
+@font-face {
+  font-family: Brush Script MT;
+  src: url(brush-script-mt/brush\ script\ mt\ kursiv.ttf);
+}
+@font-face {
+  font-family: Pacifico;
+  src: url(brush-script-mt/Pacifico.ttf);
+}
+html {
+  background-color: snow;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+h1 {
+  font-size: 60px;
+  line-height: 0.8;
+}
+h2 {
+  font-size: 30px;
+  line-height: 0.8;
+}
+.mainHeaderContainer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.mainHeaderContainer .githubLinkLogo .gitHubLogo a img {
+  max-width: 80px;
+  margin-right: auto;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+.mainHeaderContainer .headerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  margin: 0 auto;
+  padding-right: 90px;
+}
+.mainHeaderContainer .headerContainer .site-title {
+  padding-left: 8px;
+  font-family: 'Pacifico', cursive;
+  font-weight: lighter;
+}
+.imageAndSelectionContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+}
+.imageAndSelectionContainer .borderImageContainer {
+  box-shadow: 15px 15px 18px #888888;
+  height: 400px;
+  width: 550px;
+  border-radius: 25px;
+  background-size: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+}
+.imageAndSelectionContainer .borderImageContainer div.borderImage {
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  height: 300px;
+  width: 450px;
+  background-color: white;
+  display: grid;
+  overflow: hidden;
+  text-align: center;
+}
+.imageAndSelectionContainer .borderImageContainer div.borderImage #websiteIntro {
+  grid-column: 1;
+  grid-row: 1;
+  font-family: 'Pacifico', cursive;
+  font-weight: lighter;
+  line-height: 1.8em;
+  font-size: 35px;
+  padding: 5px;
+}
+.imageAndSelectionContainer .borderImageContainer div.borderImage #imgUsrFile {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.imageAndSelectionContainer .borderSelection {
+  margin-top: 120px;
+  width: 1024px;
+  box-shadow: 5px 10px 18px #888888;
+  border-radius: 25px;
+}
+.imageAndSelectionContainer .borderSelection #menu {
+  margin-top: -140px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: -33px;
+}
+.imageAndSelectionContainer .borderSelection #menu a h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 55px;
+  font-weight: lighter;
+  line-height: 1em;
+  padding-bottom: 0.5em;
+}
+.imageAndSelectionContainer .borderSelection .buttonGroup {
+  height: 100%;
+  width: 100%;
+}
+.imageAndSelectionContainer .borderSelection .buttonGroup .tab-content {
+  /*display: none;*/
+}
+.imageAndSelectionContainer .borderSelection .buttonGroup .tab-content .borderTransition {
+  max-height: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+.imageAndSelectionContainer .borderSelection .buttonGroup .tab-content .borderTransition .selection {
+  min-width: 150px;
+  height: 150px;
+}
+.imageAndSelectionContainer .borderSelection .buttonGroup .tab-content .colorPickerButton {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  display: grid;
+}
+.imageAndSelectionContainer .borderSelection .buttonGroup .tab-content .colorPickerButton #colorpickerLabel {
+  width: 150px;
+  height: 150px;
+  grid-column: 1;
+  grid-row: 1;
+}
+.imageAndSelectionContainer .borderSelection .buttonGroup .tab-content .colorPickerButton #colorpickerLabel #clrpickerspan {
+  width: 150px;
+  height: 150px;
+  color: black;
+  line-height: 0.8em;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: -50px;
+}
+.imageAndSelectionContainer .borderSelection .buttonGroup .tab-content .colorPickerButton #colorpicker {
+  grid-column: 1;
+  grid-row: 1;
+  height: 150px;
+  width: 150px;
+  margin: 7px;
+  background-color: #FFFFFF;
+  z-index: -1;
+}
