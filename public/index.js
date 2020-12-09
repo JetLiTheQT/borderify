@@ -67,14 +67,14 @@ function insertNewIMGButton(photoURL, id/*imageURL*/){
 function setIMG(photoURL)
 {
   document.getElementById(photoURL+"ID").addEventListener("click", function(){
-    document.getElementById("borderImageID").style.backgroundImage = "url("+photoURL+")";
-    document.getElementById("borderImageID").style.transitionProperty = "background-image";
-    document.getElementById("borderImageID").style.backgroundSize = "cover";
-    document.getElementById("borderImageID").style.backgroundPosition = "center";
-    document.getElementById("borderImageID").style.transitionDuration = "1.5s";
-    if(document.getElementById("borderImageID").style.backgroundColor !== "")
-      document.getElementById("borderImageID").style.backgroundColor = "";   
-  })
+  document.getElementById("borderImageID").style.backgroundImage = "url("+photoURL+")";
+  document.getElementById("borderImageID").style.transitionProperty = "background-image";
+  document.getElementById("borderImageID").style.backgroundSize = "cover";
+  document.getElementById("borderImageID").style.backgroundPosition = "center";
+  document.getElementById("borderImageID").style.transitionDuration = "1.5s";
+  if(document.getElementById("borderImageID").style.backgroundColor !== "")
+    document.getElementById("borderImageID").style.backgroundColor = "";   
+})
 }
 //Loads buttons at start 
 function loadIMGButtons(){
