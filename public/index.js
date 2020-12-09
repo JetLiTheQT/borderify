@@ -47,6 +47,41 @@ function loadButtons(){
 
 
 
+//Function to insert a new img Button.
+function insertNewIMGButton(photoURL, id/*imageURL*/){
+  var context = {
+    "id": id,
+    "photoURL": photoURL
+    // Figure out later "imageURL": imageURL (For the second tab for image borders!)
+  }
+  var newIMGButtonHTML = Handlebars.templates.newIMGButton(context);
+  var imgButtonDiv = document.getElementById("imgButtonDiv");
+  imgButtonDiv.insertAdjacentHTML("beforeend", newIMGButtonHTML);
+}
+
+//Function to set bg.color of the borderImage, called from loadButtons()
+function setIMG(photoURL)
+{
+  document.getElementById(photoURL+"ID").addEventListener("click", function(){
+      document.getElementById("borderImageID").style.backgroundImage = "url("+photoURL+")";
+  })
+}
+//Loads buttons at start 
+function loadIMGButtons(){
+  var test= document.getElementsByClassName("imgselection");
+  console.log(test.length);
+  for (i = 0; i < test.length; i++) {
+      var x = document.getElementsByTagName("button")[i].getAttribute("data-photoURL"); 
+      console.log(x);
+      document.getElementById(x + "ID").style.backgroundImage = "url("+x+")";
+      setIMG(x);
+  }
+
+}
+
+
+
+
 
 
 /* Function for Input for image-only files.
@@ -103,6 +138,7 @@ function colorPickerFunc(){
 //Make the website automatically load a random image/color when initially loaded so the background-color of the borderImageContainer & borderImage aren't the same
 window.addEventListener("load", loadButtons);
 window.addEventListener("load", colorPickerFunc);
+window.addEventListener("load", loadIMGButtons);
 //Get Color Picker
 
 

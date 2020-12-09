@@ -222,3 +222,8 @@ h2 {
   width: auto;
   margin-bottom: 50px;
 }
+.borderTransition {
+  max-height: 100%;
+  display: flex;
+  overflow-x: auto;
+}
