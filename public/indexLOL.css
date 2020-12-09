@@ -121,32 +121,38 @@ h2 {
   height: 100%;
   width: 100%;
 }
-.imageAndSelectionContainer .borderSelection .buttonGroup .tab-content {
-  /*display: none;*/
+.imageAndSelectionContainer .borderSelection .buttonGroup .tabcontent:target {
+  display: block;
 }
-.imageAndSelectionContainer .borderSelection .buttonGroup .tab-content .borderTransition {
+.imageAndSelectionContainer .borderSelection .buttonGroup .tabcontent {
+  /*display: none;*/
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.imageAndSelectionContainer .borderSelection .buttonGroup .tabcontent .borderTransition {
   max-height: 100%;
   display: flex;
   overflow-x: auto;
 }
-.imageAndSelectionContainer .borderSelection .buttonGroup .tab-content .borderTransition .selection {
+.imageAndSelectionContainer .borderSelection .buttonGroup .tabcontent .borderTransition .selection {
   min-width: 150px;
   height: 150px;
 }
-.imageAndSelectionContainer .borderSelection .buttonGroup .tab-content .colorPickerButton {
+.imageAndSelectionContainer .borderSelection .buttonGroup .tabcontent .colorPickerButton {
   margin: 0 auto;
   width: 100%;
   height: 100%;
   display: flex;
   display: grid;
 }
-.imageAndSelectionContainer .borderSelection .buttonGroup .tab-content .colorPickerButton #colorpickerLabel {
+.imageAndSelectionContainer .borderSelection .buttonGroup .tabcontent .colorPickerButton #colorpickerLabel {
   width: 150px;
   height: 150px;
   grid-column: 1;
   grid-row: 1;
 }
-.imageAndSelectionContainer .borderSelection .buttonGroup .tab-content .colorPickerButton #colorpickerLabel #clrpickerspan {
+.imageAndSelectionContainer .borderSelection .buttonGroup .tabcontent .colorPickerButton #colorpickerLabel #clrpickerspan {
   width: 150px;
   height: 150px;
   color: black;
@@ -155,7 +161,7 @@ h2 {
   text-align: center;
   padding-top: -50px;
 }
-.imageAndSelectionContainer .borderSelection .buttonGroup .tab-content .colorPickerButton #colorpicker {
+.imageAndSelectionContainer .borderSelection .buttonGroup .tabcontent .colorPickerButton #colorpicker {
   grid-column: 1;
   grid-row: 1;
   height: 150px;
@@ -163,4 +169,56 @@ h2 {
   margin: 7px;
   background-color: #FFFFFF;
   z-index: -1;
+}
+/* tabs for color and image /*
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+/* 404 Error CSS */
+.error-container {
+  font-family: "Pacifico", serif;
+  font-weight: 100;
+  text-align: center;
+}
+.error-container h2 {
+  font-size: 144px;
+  letter-spacing: 2px;
+}
+.error-container h3 {
+  font-size: 90px;
+  letter-spacing: 2px;
+}
+/* Footer Div */
+.footerdiv {
+  height: auto;
+  width: auto;
+  margin-bottom: 50px;
 }
