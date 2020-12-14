@@ -7,6 +7,11 @@
 font-family: Pacifico;
 src: url(brush-script-mt/Pacifico.ttf);
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
 html{
     background-color: snow;
 }
@@ -116,7 +121,9 @@ h2{
         display: flex;
         flex-direction: row;
         margin: 0 auto;
+        justify-content: space-between;
         margin-top: 50px;
+        margin-bottom: -35px;
         .addBorderBtnContainer{
             #borderBtn{
                 height: 15px;
@@ -148,20 +155,20 @@ h2{
         }
     }
 
-    #downn{
-        margin-top:10px;
-        margin-bottom:10px;
+    // #downn{
+    //     margin-top:10px;
+    //     margin-bottom:10px;
 
-        a {
-            text-shadow: 2px 2px grey;
-                font-family: 'Pacifico', cursive;
-                font-size: 55px;
-                font-weight: lighter;
-                line-height: 1em;
-                padding-bottom: .5em;
-        }
+    //     a {
+    //         text-shadow: 2px 2px grey;
+    //             font-family: 'Pacifico', cursive;
+    //             font-size: 55px;
+    //             font-weight: lighter;
+    //             line-height: 1em;
+    //             padding-bottom: .5em;
+    //     }
         
-    }
+    // }
     
     .borderSelection{
         margin-top: 120px;
@@ -170,12 +177,12 @@ h2{
         box-shadow: 5px 10px 18px #888888;
         border-radius: 25px;
         #menu{
-            margin-top: -140px;
+            margin-top: -65px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-evenly;
-            margin-bottom: -33px;
+            margin-bottom: -10px;
             
             a h2{
                 text-shadow: 2px 2px grey;
@@ -189,7 +196,7 @@ h2{
         .buttonGroup{
             display: flex;
             flex-direction: row;
-            height: 100%;
+            height: auto;
             width: 100%;
             padding-top: 15px;
             // max-width: 1024px;
@@ -203,7 +210,7 @@ h2{
                 border: 1px solid #ccc;
                 border-top: none;
                 width: 100%;
-                height: 100%;
+                height: auto;
                 .borderTransition{
                     // height: 100%;
                     margin: 0 auto;
@@ -223,73 +230,27 @@ h2{
                         // margin: 7px;
                         // border-radius: 25px;
                     } 
-
-                    // .colorPickerButton{
-                    //     margin: 0 auto;
-                    //     width: 150px;
-                    //     height: 150px;
-                    //     display: grid;
-                    //     //padding-left: 45%;
-                    //     #colorpickerLabel{
-                    //         width: 150px;
-                    //         height: 150px;
-                    //         grid-column: 1;
-                    //         grid-row: 1;
-                            
-                    //         #clrpickerspan{
-                    //             width: 150px;
-                    //             height: 150px;
-                    //             text-align: center;
-                    //             color: black;
-                    //             line-height:.8em;
-                    //             font-family: sans-serif; 
-                    //             text-align: center;
-                    //             padding-top: -50px;
-                    //         }
-                           
-                    //     }
-                        
-                    //     #colorpicker{
-                    //         grid-column: 1;
-                    //         grid-row: 1;
-                    //         height: 150px;
-                    //         width: 150px;
-                    //         margin: 7px;
-                    //         background-color: #FFFFFF;
-                    //         z-index: -1;
-                    //     }
-                    // }
                     
                 }
                 .colorPickerButton{
                     margin: 0 auto;
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    display: grid;
-                    //padding-left: 45%;
+                    width: auto;
+                    height: auto;
+                    display: inline-block;
+                    padding-left: 40%;
                     #colorpickerLabel{
+                        padding-left: 15px;
+                    }
+                    #clrpickerspan{
+                        padding-right: 80px;
                         width: 150px;
                         height: 150px;
-                        grid-column: 1;
-                        grid-row: 1;
-                        
-                        #clrpickerspan{
-                            width: 150px;
-                            height: 150px;
-                            text-align: center;
-                            color: black;
-                            line-height:.8em;
-                            font-family: sans-serif; 
-                            text-align: center;
-                            padding-top: -50px;
-                        }
-                       
+                        text-align: center;
+                        color: black;
+                        font-family: sans-serif; 
                     }
                     
                     #colorpicker{
-                        grid-column: 1;
-                        grid-row: 1;
                         height: 150px;
                         width: 150px;
                         margin: 7px;
@@ -297,27 +258,28 @@ h2{
                         z-index: -1;
                     }
                 }
+                
             }
-            // #imageTab{
-            //     .borderTransition{
-            //     // height: 100%;
-            //     // width: 100%;
-            //     margin: 0 auto;
-            //     width: 98%;
-            //     max-height: 100%;
-            //     display: flex;
-            //     overflow-x: auto;
-            //     overflow-y: hidden;
-            //         .imgselection{
-            //             min-width: 350px;
-            //             height: 350px;
-            //             background-position: center;
-            //             background-size: cover;
-            //             margin: 5px;
-            //             border-radius: 8px;
-            //         }
-            //     }
-            // }
+            #imageTab{
+                .borderTransition{
+                // height: 100%;
+                // width: 100%;
+                margin: 0 auto;
+                width: 98%;
+                max-height: 100%;
+                display: flex;
+                overflow-x: auto;
+                overflow-y: hidden;
+                    .imgselection{
+                        min-width: 350px;
+                        height: 350px;
+                        background-position: center;
+                        background-size: cover;
+                        margin: 5px;
+                        border-radius: 8px;
+                    }
+                }
+            }
         }
     }
 }
@@ -387,3 +349,10 @@ h2{
 
 }
   
+//POP UP CSS
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 15px;
+}

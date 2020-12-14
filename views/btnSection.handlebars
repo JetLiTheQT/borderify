@@ -27,23 +27,33 @@
         <div id = "menu">
             <!--  Calls function openTab to open tab and hide other tab; return false to prevent page jump on anchor click-->
             <a href="#" class = "tablinks" onclick="openTab(event, 'colorTab'); return false" ><h2>Colors</h2></a>
-            
+            <a href="#" class = "tablinks" onclick="openTab(event, 'imageTab'); return false" ><h2>Image</h2></a>
             <!-- Goal is for the images Tab is to pull stock images from buttonData.json or a new *Data.json file to create buttons for the imageSelection 
             to be then implemented similarly to how each color button works -->
             <a href="#" class = "tablinks" onclick="makeAndTake()" id="defaultOpen" ><h2>Download</h2></a>
         </div>
         
         <div class = "buttonGroup">
-        <div id="colorTab" class="tabcontent">
-            <div class="borderTransition" id= "buttonDiv">
-                <!-- Loops through each button from buttonData and creates a new button from the template -->
-                {{#each buttonDiv}}
-                    {{>buttonTemplate}}  
-                {{/each}}    
+            <div id="colorTab" class="tabcontent">
+                <div class="borderTransition" id= "buttonDiv">
+                    <!-- Loops through each button from buttonData and creates a new button from the template -->
+                    {{#each buttonDiv}}
+                        {{>buttonTemplate}}  
+                    {{/each}}    
+                </div>
+                <div class ="colorPickerButton" id="colorPickerButtonID">
+                        <!--<span class="popup" id ="colorpickerLabel">Pick your own Color!</span>-->
+                        <input type="color" id="colorpicker" value="#FFFFFF">
+                </div>
+                <label for="colorpicker" id="colorpickerLabel"><span id ="clrpickerspan">Pick your own color!</span></label>
             </div>
-            <div class ="colorPickerButton" id="colorPickerButtonID">
-                    <label for="colorpicker" id="colorpickerLabel"><span id ="clrpickerspan">Pick your own color:</span></label>
-                    <input type="color" id="colorpicker" value="#FFFFFF">
+            <div id="imageTab" class="tabcontent">
+                <div class="borderTransition" id= "imgButtonDiv">
+                    <!-- Loops through each button from buttonData and creates a new button from the template -->
+                    {{#each imgButtonDiv}}
+                        {{>imgbuttonTemplate}}  
+                    {{/each}}    
+                </div>
             </div>
         </div>
 

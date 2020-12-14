@@ -53,40 +53,40 @@ function loadButtons(){
 
 
 //Function to insert a new img Button.
-// function insertNewIMGButton(photoURL, id/*imageURL*/){
-//   var context = {
-//     "id": id,
-//     "photoURL": photoURL
-//     // Figure out later "imageURL": imageURL (For the second tab for image borders!)
-//   }
-//   var newIMGButtonHTML = Handlebars.templates.newIMGButton(context);
-//   var imgButtonDiv = document.getElementById("imgButtonDiv");
-//   imgButtonDiv.insertAdjacentHTML("beforeend", newIMGButtonHTML);
-// }
+function insertNewIMGButton(photoURL, id/*imageURL*/){
+  var context = {
+    "id": id,
+    "photoURL": photoURL
+    // Figure out later "imageURL": imageURL (For the second tab for image borders!)
+  }
+  var newIMGButtonHTML = Handlebars.templates.newIMGButton(context);
+  var imgButtonDiv = document.getElementById("imgButtonDiv");
+  imgButtonDiv.insertAdjacentHTML("beforeend", newIMGButtonHTML);
+}
 
-// //Function to set bg.color of the borderImage, called from loadButtons()
-// function setIMG(photoURL)
-// {
-//   document.getElementById(photoURL+"ID").addEventListener("click", function(){
-//   document.getElementById("borderImageID").style.backgroundImage = "url("+photoURL+")";
-//   document.getElementById("borderImageID").style.transitionProperty = "background-image";
-//   document.getElementById("borderImageID").style.backgroundSize = "cover";
-//   document.getElementById("borderImageID").style.backgroundPosition = "center";
-//   document.getElementById("borderImageID").style.transitionDuration = "1.5s";
-//   if(document.getElementById("borderImageID").style.backgroundColor !== "")
-//     document.getElementById("borderImageID").style.backgroundColor = "";   
-// })
-// }
-// //Loads buttons at start 
-// function loadIMGButtons(){
-//   var test= document.getElementsByClassName("imgselection");
-//   for (i = 0; i < test.length; i++) {
-//       var x = document.getElementsByClassName("imgselection")[i].getAttribute("data-photoURL"); 
-//       document.getElementById(x + "ID").style.backgroundImage = "url("+x+")";
-//       setIMG(x);
-//   }
+//Function to set bg.color of the borderImage, called from loadButtons()
+function setIMG(photoURL)
+{
+  document.getElementById(photoURL+"ID").addEventListener("click", function(){
+    document.getElementById("borderImageID").style.backgroundImage = "url("+photoURL+")";
+    document.getElementById("borderImageID").style.transitionProperty = "background-image";
+    document.getElementById("borderImageID").style.backgroundSize = "cover";
+    document.getElementById("borderImageID").style.backgroundPosition = "center";
+    document.getElementById("borderImageID").style.transitionDuration = "1.5s";
+    if(document.getElementById("borderImageID").style.backgroundColor !== "")
+      document.getElementById("borderImageID").style.backgroundColor = "";   
+})
+}
+//Loads buttons at start 
+function loadIMGButtons(){
+  var test= document.getElementsByClassName("imgselection");
+  for (i = 0; i < test.length; i++) {
+      var x = document.getElementsByClassName("imgselection")[i].getAttribute("data-photoURL"); 
+      document.getElementById(x + "ID").style.backgroundImage = "url("+x+")";
+      setIMG(x);
+  }
 
-// }
+}
 
 
 /* Setup Slider */
@@ -153,7 +153,7 @@ var download = function (filename) {
   element.setAttribute('download', filename);
 
   element.style.display = 'none';
-  document.body.appendChild(element);
+  document.body.appenSdChild(element);
 
   element.click();
 
@@ -231,6 +231,8 @@ function openTab(evt, tabCorI) {
   evt.currentTarget.className += " active";
 }
 
-//tester for the canvas
-
-
+//tester for the pop-up
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}

@@ -20,21 +20,6 @@ app.set('view engine', 'handlebars');
 
 app.use(express.static('public'));
 
-// app.get('/', function(req,res,next){
-//     if(btnData){
-//       res.status(200).render('btnSection', {buttonDiv: btnData});
-//       //res.status(200).render('btnSection', {imgButtonDiv: imgbtnData});
-//     }
-//     else{next();}
-// });
-// app.post('/', function(req,res,next){
-//   if(imgbtnData){
-//     //res.status(200).render('btnSection', {buttonDiv: btnData});
-//     res.status(200).render('btnSection', {imgButtonDiv: imgbtnData});
-//   }
-//   else{next();}
-// });
-
 app.get("/", setColorBtns, setImageBtns, renderForm);
 function setColorBtns(req, res,next){
   if(btnData){
