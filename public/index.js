@@ -159,21 +159,20 @@ var download = function (filename) {
 
   document.body.removeChild(element);
 }
+
 function makeAndTake(){
   html2canvas(document.getElementById("borderImageID")).then(function(canvas) {
-    var thingy = canvas;
-    var downImg = thingy.toDataURL("image/jpg");
-    var element = document.createElement('a');
-    element.setAttribute('href', downImg);
-    element.setAttribute('download', downImg);
-  
-    element.style.display = 'none';
-    document.body.appendChild(element);
-  
-    element.click();
-  
-    document.body.removeChild(element);
- 
+    var dataURL = canvas.toDataURL("image/jpeg", 1.0);
+        var a = document.createElement('a');
+        a.href = dataURL;
+        a.download = 'untitled.jpeg';
+        document.body.appendChild(a);
+        a.click();
+    /*document.body.appendChild(canvas);
+
+    return Canvas2Image.saveAsPNG(canvas); */
+
+
 });
 
 
