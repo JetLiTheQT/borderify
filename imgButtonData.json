@@ -1,59 +1,55 @@
 [
 
     {
-        "photoURL": "https://images.all-free-download.com/images/graphiclarge/blue_polka_dot_background_213190.jpg",
-        "id":"https://images.all-free-download.com/images/graphiclarge/blue_polka_dot_background_213190.jpgID"
+        "photoURL": "images/blue_polka_dot_background_213190.jpg",
+        "id":"images/blue_polka_dot_background_213190.jpgID"
     },
     {
-        "photoURL": "https://www.publicdomainpictures.net/pictures/40000/velka/red-polkadot-background.jpg",
-        "id":"https://www.publicdomainpictures.net/pictures/40000/velka/red-polkadot-background.jpgID"
+        "photoURL": "images/red-polkadot-background.jpg",
+        "id":"images/red-polkadot-background.jpgID"
     },
     {
-        "photoURL": "https://www.teahub.io/photos/full/29-297811_3200x1800-high-resolution-pink-polka-dot-background.jpg",
-        "id":"https://www.teahub.io/photos/full/29-297811_3200x1800-high-resolution-pink-polka-dot-background.jpgID"
+        "photoURL": "images/29-297811_3200x1800-high-resolution-pink-polka-dot-background.jpg",
+        "id":"images/29-297811_3200x1800-high-resolution-pink-polka-dot-background.jpgID"
     },
     {
-        "photoURL": "https://images.freeimages.com/images/large-previews/ec9/background-1630963.jpg",
-        "id":"https://images.freeimages.com/images/large-previews/ec9/background-1630963.jpgID"
+        "photoURL": "images/background-1630963.jpg",
+        "id":"images/background-1630963.jpgID"
     },
     {
-        "photoURL": "https://image.freepik.com/free-photo/wooden-plank-textured-background-material_53876-33591.jpg",
-        "id": "https://image.freepik.com/free-photo/wooden-plank-textured-background-material_53876-33591.jpgID"
+        "photoURL": "images/wooden-plank-textured-background-material_53876-33591.jpg",
+        "id": "images/wooden-plank-textured-background-material_53876-33591.jpgID"
     },
     {
-        "photoURL": "https://www.teahub.io/photos/full/35-352663_wallpaper-leaves-green-plant-aesthetic-nature-background-green.jpg",
-        "id": "https://www.teahub.io/photos/full/35-352663_wallpaper-leaves-green-plant-aesthetic-nature-background-green.jpgID"
+        "photoURL": "images/35-352663_wallpaper-leaves-green-plant-aesthetic-nature-background-green.jpg",
+        "id": "images/35-352663_wallpaper-leaves-green-plant-aesthetic-nature-background-green.jpgID"
     },
     {
-        "photoURL": "https://c1.wallpaperflare.com/preview/23/433/94/dark-ocean-sea-water.jpg",
-        "id": "https://c1.wallpaperflare.com/preview/23/433/94/dark-ocean-sea-water.jpgID"
+        "photoURL": "images/dark-ocean-sea-water.jpg",
+        "id": "images/dark-ocean-sea-water.jpgID"
     },
     {
-        "photoURL": "https://images.freeimages.com/images/large-previews/c0c/water-1184995.jpg",
-        "id":  "https://images.freeimages.com/images/large-previews/c0c/water-1184995.jpgID"
+        "photoURL": "images/water-1184995.jpg",
+        "id":  "images/water-1184995.jpgID"
     },
     {
-        "photoURL": "https://wallpaperset.com/w/full/1/7/4/461901.jpg",
-        "id": "https://wallpaperset.com/w/full/1/7/4/461901.jpgID"
+        "photoURL": "images/461901.jpg",
+        "id": "images/461901.jpgID"
     },
     {
-        "photoURL": "https://www.freecodecamp.org/news/content/images/2020/04/w-qjCHPZbeXCQ-unsplash.jpg",
-        "id": "https://www.freecodecamp.org/news/content/images/2020/04/w-qjCHPZbeXCQ-unsplash.jpgID"
+        "photoURL": "images/w-qjCHPZbeXCQ-unsplash.jpg",
+        "id": "images/w-qjCHPZbeXCQ-unsplash.jpgID"
     },
     {
-        "photoURL": "https://www.wallpapertip.com/wmimgs/2-24409_purple-aesthetic-background.jpg",
-        "id": "https://www.wallpapertip.com/wmimgs/2-24409_purple-aesthetic-background.jpgID"
+        "photoURL": "images/2-24409_purple-aesthetic-background.jpg",
+        "id": "images/2-24409_purple-aesthetic-background.jpgID"
     },
     {
-        "photoURL": "https://d7hftxdivxxvm.cloudfront.net/?resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2F2RNK1P0BYVrSCZEy_Sd1Ew%252F3417757448_4a6bdf36ce_o.jpg&width=1200&quality=80",
-        "id":  "https://d7hftxdivxxvm.cloudfront.net/?resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2F2RNK1P0BYVrSCZEy_Sd1Ew%252F3417757448_4a6bdf36ce_o.jpg&width=1200&quality=80ID"
+        "photoURL": "images/472377.jpg",
+        "id":  "images/472377.jpgID"
     },
     {
-        "photoURL": "https://wallpaperset.com/w/full/c/9/1/472377.jpg",
-        "id":  "https://wallpaperset.com/w/full/c/9/1/472377.jpgID"
-    },
-    {
-        "photoURL": "https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-14.jpg",
-          "id":  "https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-14.jpgID"  
+        "photoURL": "images/star-wars-backgrounds-14.jpg",
+          "id":  "images/star-wars-backgrounds-14.jpgID"  
       }
 ]

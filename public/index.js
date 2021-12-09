@@ -161,16 +161,15 @@ var download = function (filename) {
 }
 
 function makeAndTake(){
-  html2canvas(document.getElementById("borderImageID")).then(function(canvas) {
-    var dataURL = canvas.toDataURL("image/jpeg", 1.0);
+  html2canvas(document.getElementById("borderImageID"),{backgroundColor: "rgba(0,0,0,0)"}).then(function(canvas) {
+    /*var dataURL = canvas.toDataURL("image/jpeg", 1.0);
         var a = document.createElement('a');
         a.href = dataURL;
         a.download = 'untitled.jpeg';
         document.body.appendChild(a);
-        a.click();
-    /*document.body.appendChild(canvas);
+        a.click(); */
 
-    return Canvas2Image.saveAsPNG(canvas); */
+    return Canvas2Image.saveAsPNG(canvas);
 
 
 });
