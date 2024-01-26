@@ -1,0 +1,69 @@
+<section class = "imageAndSelectionContainer">
+    <div class="borderImageContainer" id = "borderImageID">
+        <div id="borderForPic">
+            <div class="borderImage" id="borderImageUsrPic">
+                <!-- Input for image-only files. -->
+                <input type="file" id="imgUsrFile" accept="image/png, image/jpeg" style="display: none;"/>
+
+                <label for="imgUsrFile" id="websiteIntro">
+                    <img src="uploadIcon.png" alt="Upload Icon" />
+                </label>
+            </div>
+
+        </div>
+    </div>
+    <!-- Cool Slider bar and etc -->
+    <div class="customizeBorder">
+        {{!-- <div class = "addBorderBtnContainer">
+            <button id = "borderBtn"></button>
+        </div> --}}
+        <div class = "slidecontainer">
+            <input type="range" min="1" max="100" value="1" class="slider" id="myRange">
+        </div>
+        <div class="downloadBtn">
+            <a href="#" onclick="makeAndTake()"><img src="downloadIcon.png"></a>
+        </div>
+    </div>
+
+    
+   
+    
+    <div class="borderSelection">
+        <div id = "menu">
+            <!--  Calls function openTab to open tab and hide other tab; return false to prevent page jump on anchor click-->
+            <a href="#" class = "tablinks" onclick="openTab(event, 'colorTab'); return false" ><h2>Colors</h2></a>
+            <a href="#" class = "tablinks" onclick="openTab(event, 'imageTab'); return false" ><h2>Image</h2></a>
+        </div>
+        
+        <div class = "buttonGroup">
+            <div id="colorTab" class="tabcontent">
+                <div class="borderTransition" id= "buttonDiv">
+                    <!-- Loops through each button from buttonData and creates a new button from the template -->
+                    {{#each buttonDiv}}
+                        {{>buttonTemplate}}  
+                    {{/each}}    
+                    <div class ="colorPickerButton" id="colorPickerButtonID">
+                        <!--<span class="popup" id ="colorpickerLabel">Pick your own Color!</span>-->
+                        <input type="color" id="colorpicker" value="#FFFFFF">
+                        <label for="colorpicker" id="colorpickerLabel"><span id ="clrpickerspan">Pick your own color!</span></label>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="imageTab" class="tabcontent">
+                <div class="borderTransition" id= "imgButtonDiv">
+                    <!-- Loops through each button from buttonData and creates a new button from the template -->
+                    {{#each imgButtonDiv}}
+                        {{>imgbuttonTemplate}}  
+                    {{/each}}    
+                </div>
+            </div>
+        </div>
+
+      
+        
+    </div>
+      
+</section>
+
+

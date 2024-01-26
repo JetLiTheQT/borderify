@@ -1,0 +1,437 @@
+/* Font Setup */
+@font-face {
+    // font-family: Brush Script MT;
+    font-family: Roboto Mono Bold;
+    // src: url(brush-script-mt/brush\ script\ mt\ kursiv.ttf);
+    src: url(roboto_mono\static\RobotoMono-Bold.ttf);
+  }
+@font-face {
+font-family: Pacifico;
+src: url(brush-script-mt/Pacifico.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+html{
+    background-color: snow;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+h1{
+    font-size: 60px;
+    line-height: 0.8;
+}
+h2{
+    font-size: 30px;
+    line-height: 0.8;
+}
+
+
+.mainHeaderContainer{
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+
+    // .githubLinkLogo{
+    //     .gitHubLogo a img{
+    //         max-width: 80px;
+    //         margin-right: auto;
+    //         margin-left: 50px;
+    //         margin-top: 25px;
+    //     }
+    // }
+    .headerContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        // width: auto;
+        // margin: 0 auto;
+        // padding-right: 90px;
+        width: auto;
+        margin-right: auto;
+        margin-left: 50px;
+        margin-top: 25px;
+        padding-bottom: 8em;
+
+        .site-title{
+            padding-left: 18px;
+            font-family: 'Roboto Mono';
+            font-weight: lighter;
+            font-size: 4rem;
+        }
+    }
+    
+}
+
+.imageAndSelectionContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+     .borderImageContainer{
+        // box-shadow: 15px 15px 18px #888888;
+        height: 400px;
+        width: 550px;
+        border-radius: 25px;
+        background-size: 100%;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+       
+        // #borderForPic {
+        //     border-radius: 25px;
+        //     height: 300px;
+        //     width: 450px;
+        //     background-color: white;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     overflow: hidden;
+        //     position: relative;
+        // }
+        div.borderImage{
+            margin: 10px;
+            //Create button that does border.
+            //border: 2px solid black;
+            border-radius: 25px;
+            height: 300px;
+            width: 450px;
+            background-color: white;
+            place-items: center; /* This centers the content in both x (horizontal) and y (vertical) axis */
+            display: grid;
+            overflow: hidden;
+            text-align: center;
+            #imgUsrFile{
+                grid-column: 1;
+                grid-row: 1;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+            }
+            label{
+                width: 50px; // or any size you want
+                height: 25px; // or any size you want
+                border: none; // remove border if you don't need it
+                background-color: transparent; // make background transparent or any color you want
+                cursor: pointer; // change cursor to indicate it's clickable
+                padding: 10px; // adjust padding as needed
+                img {
+                    width: 100%; // scale image to fit the button
+                    height: auto; // maintain aspect ratio
+                }
+            }
+            
+        }
+        
+        
+    }
+    .borderTransition {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; // This will space out your items
+        align-items: center;
+        padding: 15px;
+        gap: 5px; // This ensures a gap between the items
+    
+        .selection {
+            flex: 0 0 calc(25% - 10px); // 4 items per row, accounting for the gap
+            height: 150px; // Your existing height
+            margin-bottom: 10px; // Add some margin at the bottom
+            border-radius: 8px;
+            cursor: pointer;
+            position: relative; // For absolute positioning inside
+            background-color: #ffffff; // A default background color
+    
+            &:nth-child(4n+4) { // Every 4th item
+                margin-right: 0; // Reset the margin-right to align properly
+            }
+        }
+    
+        
+    }
+    .customizeBorder{
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        margin-top: 50px;
+        margin-bottom: -35px;
+        // .addBorderBtnContainer{
+        //     #borderBtn{
+        //         height: 15px;
+        //         width: 15px;
+        //         border: 1px solid black;
+        //     }
+        // }
+        .downloadBtn {
+            a {
+                display: inline-block; // Makes sure the anchor behaves like a block element with width and height
+                width: 150px; // Increase the width as desired
+                height: 50px; // Increase the height as desired
+                border: none; // Keeps the border removed
+                background-color: transparent; // Maintains a transparent background
+                cursor: pointer; // Ensures the cursor changes to a pointer on hover
+                text-align: center; // Centers the image within the link
+                line-height: 50px; // Vertically centers the content, should match the height
+    
+                img {
+                    width: auto; // scale image to fit the button
+                    height: 80%; // maintain aspect ratio
+                    vertical-align: middle; // Aligns the image in the middle vertically if it's inline or inline-block
+                }
+            }
+        }
+        .slidecontainer{
+            margin-top: 2px;
+            width: 100%;
+            .slider{
+                -webkit-appearance: none;
+                width: 100%;
+                height: 8px;
+                background: grey;
+                outline: none;
+                opacity: .5;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+                display: flex;
+                :hover{
+                    opacity: 1;
+                }
+                :focus {
+                    box-shadow: none;
+                    outline: none;
+                  }
+            }
+        }
+    }
+
+    // #downn{
+    //     margin-top:10px;
+    //     margin-bottom:10px;
+
+    //     a {
+    //         text-shadow: 2px 2px grey;
+    //             font-family: 'Roboto Mono';
+    //             font-size: 55px;
+    //             font-weight: lighter;
+    //             line-height: 1em;
+    //             padding-bottom: .5em;
+    //     }
+        
+    // }
+    
+    .borderSelection{
+        margin-top: 120px;
+        width: 1024px;
+        height: auto;
+        box-shadow: 5px 10px 18px #888888;
+        border-radius: 25px;
+        #menu{
+            margin-top: -65px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-bottom: -10px;
+            .tablinks.active h2 {
+                text-decoration: underline;
+            }
+            a h2{
+                font-family: 'Roboto Mono';
+                font-size: 55px;
+                font-weight: lighter;
+                line-height: 1em;
+                padding-bottom: .5em;
+            }
+        }
+        .buttonGroup{
+            display: flex;
+            flex-direction: row;
+            height: auto;
+            width: 100%;
+            padding-top: 15px;
+            // max-width: 1024px;
+            // flex-shrink: 0;
+            .tabcontent:target {
+                display: block;
+                }
+
+            .tabcontent {
+                display: none;
+                border: 1px solid #ccc;
+                border-top: none;
+                width: 100%;
+                height: auto;
+                .borderTransition {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between; // This will space out your items
+                    align-items: center;
+                    padding: 15px;
+                    gap: 5px; // This ensures a gap between the items
+                
+                    .selection {
+                        flex: 0 0 calc(25% - 10px); // 4 items per row, accounting for the gap
+                        height: 150px; // Your existing height
+                        margin-bottom: 10px; // Add some margin at the bottom
+                        border-radius: 8px;
+                        cursor: pointer;
+                        position: relative; // For absolute positioning inside
+                        background-color: #ffffff; // A default background color
+                
+                        &:nth-child(4n+4) { // Every 4th item
+                            margin-right: 0; // Reset the margin-right to align properly
+                        }
+                    }
+                }
+                .colorPickerButton{
+                    flex: 0 0 calc(25% - 10px); // Aligns with the .selection elements
+                    width: 242px;
+                    height: 150px;
+                    margin-bottom: 10px;
+                    border: 2px dashed #ccc; // Dashed border to indicate customizability
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #ffffff; // A default background color
+                    #colorpickerLabel{
+                        margin-bottom: 5px; // Space between label and input
+                        text-align: center; // Center-align the text
+                        font-family: sans-serif;
+                        font-size: 14px; // Smaller font size for the label
+                        color: #000000; // Label text color
+                        cursor: pointer;
+                    }
+                    // #clrpickerspan{
+                    //     width: 150px;
+                    //     height: 150px;
+                    //     text-align: center;
+                    //     color: black;
+                    //     font-family: sans-serif; 
+                    // }
+                    
+                    #colorpicker{
+                        height: 150px;
+                        width: 242px;
+                        margin: 7px;
+                        background-color: #FFFFFF;
+                    }
+                }
+                
+            }
+            #imageTab{
+                .borderTransition {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between; // This will space out your items
+                    align-items: center;
+                    padding: 15px;
+                    gap: 5px; // This ensures a gap between the items
+                
+                    .imgselection {
+                        flex: 0 0 calc(25% - 10px); // 4 items per row, accounting for the gap
+                        height: 150px; // Your existing height
+                        margin-bottom: 10px; // Add some margin at the bottom
+                        border-radius: 8px;
+                        cursor: pointer;
+                        position: relative; // For absolute positioning inside
+                        background-color: #ffffff; // A default background color
+                
+                        &:nth-child(4n+4) { // Every 4th item
+                            margin-right: 0; // Reset the margin-right to align properly
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* tabs for color and image /*
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+        :hover{
+            background-color: #ddd;
+        }
+        :active{
+            background-color: #ccc;
+        }
+  }
+}
+
+  
+/* 404 Error CSS */
+.error-container {
+    font-family: "Pacifico", serif;
+    font-weight: 100;
+    text-align: center;
+  }
+  
+  .error-container h2 {
+    font-size: 144px;
+    letter-spacing: 2px;
+  }
+  
+  .error-container h3 {
+    font-size: 90px;
+    letter-spacing: 2px;
+}
+
+  /* Footer Div */
+  .footerdiv{
+    height:auto;
+    width: auto;
+    margin-bottom: 50px;
+  }
+
+  
+.button { 
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+  
+//POP UP CSS
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 15px;
+}

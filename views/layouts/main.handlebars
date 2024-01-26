@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <title>Borderify - Add borders to your photos!</title>
+        <link rel="stylesheet" type = "text/css" href = "indexLOL.css">
+        <!-- Have this now for later-->
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+        <script src= "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">  </script> 
+        <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+        <script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
+
+        <script src = "newImgButton.js" charset = "utf-8" defer></script>
+        <script src = "newButton.js" charset= "utf-8" defer></script>
+        <script>
+            less = {
+                env: "development",
+                async: false,
+                fileAsync: false,
+                poll: 1000,
+                functions: {},
+                dumpLineNumbers: "comments",
+                relativeUrls: false,
+                rootpath: ":/a.com/"
+            };
+        </script>
+        <script src = "index.js" charset="utf-8" defer></script>
+    </head>
+    <body>
+        <!-- Header Tag -->
+        
+        {{>header}}
+        <!-- calls body from server.js to retrieve from other handlebar files in the /views dir-->
+        
+        {{{body}}}
+        
+        <footer>
+            <div class = "footerdiv"></div>
+        </footer>
+      
+     </body>
+</html>

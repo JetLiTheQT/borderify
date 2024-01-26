@@ -1,0 +1,41 @@
+{
+  "name": "borderify",
+  "version": "1.0.0",
+  "description": "Adds borders to Photos",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "(handlebars views/partials/buttonTemplate.handlebars -f public/newButton.js) & (handlebars views/partials/imgbuttonTemplate.handlebars -f public/newImgButton.js)",
+    "buildcss": "lessc public/index.less public/indexLOL.css",
+    "prestart": "(npm run build) & (npm run buildcss)",
+    "predev": "(npm run build) & (npm run buildcss)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cs290-f20/final-project-team-55"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/osu-cs290-f20/final-project-team-55/issues"
+  },
+  "homepage": "https://github.com/osu-cs290-f20/final-project-team-55#readme",
+  "dependencies": {
+    "canvas2image": "^1.0.5",
+    "dom-to-image": "^2.6.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.5",
+    "git": "^0.1.5",
+    "handlebars": "^4.7.6",
+    "html2canvas": "^1.0.0-rc.7",
+    "less": "^3.12.2",
+    "lessc": "^1.0.2",
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "less": "^3.12.2",
+    "nodemon": "^2.0.22"
+  }
+}
