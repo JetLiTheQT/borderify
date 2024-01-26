@@ -10,19 +10,19 @@ var path = require('path');
 var express = require('express');
 var app = express();
 var port = process.env.PORT || 3000;
-var btnData = require('../buttonData.json');
-var imgbtnData = require('../imgButtonData.json');
+var btnData = require('./buttonData.json');
+var imgbtnData = require('./imgButtonData.json');
 var domtoimage = require('dom-to-image');
-const serverless = require('serverless-http');
+// const serverless = require('serverless-http');
 
 
 var exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
-// app.use(express.static('public'));
+app.use(express.static('public'));
 
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/", setColorBtns, setImageBtns, renderForm);
 function setColorBtns(req, res,next){
@@ -47,8 +47,8 @@ app.get('*', function (req, res) {
   res.status(404).render('404');
 });
 
-// app.listen(port, function () {
-//   console.log("== Server is listening on port", port);
-// });
+app.listen(port, function () {
+  console.log("== Server is listening on port", port);
+});
 
-module.exports = serverless(app);
+// module.exports = serverless(app);
